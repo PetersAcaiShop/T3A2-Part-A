@@ -22,6 +22,7 @@
     - [🔐 Authentication (JWT & OAuth2)](#-authentication-jwt--oauth2)
     - [📱 Responsive Design](#-responsive-design)
   - [🎯 Target Audience](#target-audience)
+  - [📖 User Stories](#user-stories)
   - [📐 Wireframes](#wireframes)
     - [🖼️ Screenshots](#screenshots)
   - [📌 GitHub Projects Board](#GitHub Projects-board)
@@ -373,6 +374,7 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 - **Why:** To ensure that **my purchase not only tastes fantastic but also perfectly aligns with my post-workout nutritional goals, allowing me to fine-tune the macronutrient profile (protein, carbohydrate, healthy fat content) to optimally support my training and recovery.**  Precise customization empowers me to take direct control of my nutrition. *For my half-marathon training, precise macronutrient ratios are critical for optimal performance and recovery. The ability to customize ensures that every smoothie or bowl becomes a targeted nutritional tool, maximizing the health benefits and directly contributing to my fitness progress. This level of personalization moves beyond mere convenience; it's about actively supporting my athletic goals through informed dietary choices.*
 
 - **Revision:** Based on user input and Emily's persona needs, the customization feature was significantly expanded to enable a wider range of dietary preferences and nutritional adjustments.  Beyond the original three basic selections, we incorporated options for keto-friendly, low-sugar, and high-protein customizations, reflecting the diverse dietary needs of health-conscious users like Emily.  We also improved the UI for customization to be more intuitive and visually clear, making it easier for users to see the impact of their choices on the nutritional content of their order.
+
 
 ### User Story 3: Track Order Status in Real-Time for Time Management
 
