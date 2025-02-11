@@ -133,13 +133,82 @@ The Git Flow workflow is used to manage source code, branching, and releases. He
 
 ![GitFlow Diagram](./docs/git-flow.png)
 
-## Trello Board
+## 📌 GitHub Projects Board: Kanban for Agile Project Management & Sprint Planning
 
-Organised task management using Trello demonstrates efficient project tracking.
+To ensure efficient project tracking and agile preparation for Part B, we utilize a Kanban-style GitHub Projects board, central to visualizing workflow and managing tasks throughout the Merry Berry project.  We consistently adhere to **simple and clear Kanban standards**, evidenced in the dated screenshots below, which also illustrate our sprint planning for Part B development.
 
-### Board Structure
+### Screenshots (Throughout Part A Documentation):**
 
-- Lists: To Do, In Progress, Testing, Done
-- Cards: Feature tasks (e.g., "Implement menu browsing")
+#### Early Stage (Feb 9th)
+![Early Stage](./docs/kanban/kanban_board_early_stage.png)
 
-[Insert Screenshots Here]
+#### Mid Stage (Feb 11th)
+![Mid Stage](./docs/kanban/kanban_board_mid_stage.png)
+
+#### Late Stage (Feb 14th)
+![Late Stage](./docs/kanban/kanban_board_late_stage.png)
+
+These screenshots, alongside the following standards, demonstrate our organized Kanban approach and Part B sprint planning.
+
+### 📋 Kanban Board Standards: Clear, Simple, and Consistently Applied
+
+Our GitHub Projects board adheres to these key standards:
+
+#### ✔️ Consistent Card Naming:  `[Feature Area] - [Concise Task Description]`
+
+Uniform card naming using `[Feature Area] - [Concise Task Description]` (e.g., `[README] - HD Polish & Proofread`) ensures immediate task identification and categorization, as shown in the **"Issues List View" screenshot**.
+
+#### ✔️ Meaningful Label Usage:  Categorization, Priority, Workload
+
+Diverse labels categorize tasks for clarity:
+
+*   **Documentation Type:** `Wireframes`, `User Stories`, `AAD`, `DFD`, `Kanban`, `README` (visually categorized in **"Issues List View" screenshot**).
+*   **Priority:** `Urgent` (`P0`), `High` (`P1`), `Medium` (`P2`) (priority labels in **"Kanban Board Overview" screenshots**).
+*   **Size Estimate:** `XS`, `S`, `M`, `L`, `XL` (for workload awareness).
+
+**The "Issues List View" screenshot effectively showcases this varied and meaningful label application.**
+
+#### ✔️ Clear Assignee Usage:  Accountability
+
+Each task is assigned to a team member for accountability, clearly visible by avatars in **"Kanban Board Overview" screenshots** within "In progress" and "In review" columns.
+
+#### ✔️ Well-Defined Kanban Workflow:  Progress Tracking
+
+Workflow columns track task status:
+
+*   **Backlog:** Prioritized tasks (P0-P2 labels), ready for "Ready".
+*   **Ready: Requirements Clear & Capacity Available:** Queue for "In progress".
+*   **In progress:** Tasks actively being worked on.
+*   **In review: Awaiting Quality Assurance Review.**
+*   **Done:** Completed, reviewed tasks.
+
+**"Kanban Board Overview" screenshots demonstrate tasks moving through these workflow stages throughout Part A.** Column descriptions on our live board further clarify each stage (e.g., "Ready: Requirements Clear & Capacity Available").
+
+#### ✔️ Granular Checklists:  Subtask Management
+
+Checklists within Issue cards break down complex tasks into sub-steps, exemplified in the **"Example Issue Detail" screenshot**.
+
+### 🗓️ Sprint Planning for Part B:  Kanban-Informed Development Sprints
+
+Extending Kanban, we planned Part B sprints around client/server milestones.  Sprints are timeboxed (e.g., 1-week), iterative, and goal-focused.  **Example: Backend Sprint 1 (Core API & Database Setup):**
+
+*   **Goal:**  Establish foundational backend.
+*   **Tasks (from Kanban Backlog):**
+    *   `[Backend] - Set up Backend Project & MongoDB Database` ([Team Member])
+    *   `[Backend] - Implement User Model & Auth API` ([Team Member])
+    *   `[Database] - Design MongoDB Schemas (User, Menu)` ([Team Member])
+
+Sprint backlogs are created by selecting prioritized tasks from Kanban "Backlog," utilizing priority and size labels for delegation.
+
+### 🚀 Reflection:  HD Project Management - Kanban Throughout & Sprint-Ready
+
+Our Kanban board, evidenced by dated screenshots, demonstrates consistently applied, simple and clear standards for HD project management throughout Part A and informs our sprint-based approach for Part B.  This agile methodology ensures transparency, accountability, and organized progress from documentation to development.
+
+#### Kanban Board Overview
+![Kanban Board Overview](./docs/kanban/kanban_board_overview.png)
+
+#### Issues List View
+![Issues List View - Showing Card Names and Labels](./docs/kanban/kanban_board_issues_list_hd_labels.png)
+
+#### Example Issue Detail
+![Example Issue Detail](./docs/kanban/kanban_example_issue.png)
