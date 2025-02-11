@@ -470,8 +470,11 @@ To ensure efficient project tracking and agile preparation for Part B, we utiliz
 #### Mid Stage (Feb 11th)
 ![Mid Stage](./docs/kanban/kanban_board_mid_stage.png)
 
-#### Late Stage (Feb 14th)
-![Late Stage](./docs/kanban/kanban_board_late_stage.png)
+#### Late Stage (Feb 13th)
+![Late Stage 1](./docs/kanban/kanban_board_late_stage_1.png)
+
+#### Late Stage (Feb 15th)
+![Late Stage 2](./docs/kanban/kanban_board_late_stage_2.png)
 
 These screenshots, alongside the following standards, demonstrate our organized Kanban approach and Part B sprint planning.
 
