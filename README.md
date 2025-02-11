@@ -348,9 +348,8 @@ Our Application Architecture Diagram clearly depicts the following distinct laye
 
 The Application Architecture Diagram visually connects these layers and indicates the flow of requests and data between them.  It demonstrates how the Presentation Layer (Frontend) interacts with the Business Logic Layer (Backend API), which in turn interacts with the Data Access Layer (MongoDB).
 
-The complete Application Architecture Diagram, visually representing these layers and their interconnections, is available as a separate image file in the [`docs/diagrams/`](./docs/diagrams/) directory, named `architecture_diagram.png`. This diagram provides a clear and comprehensive overview of the Merry Berry application's high-level architecture.
+![Application Architecture Diagram](./docs/diagrams/application_architecture_diagram.png)
 
-[Insert AAD here]
 
 ## User Stories
 
