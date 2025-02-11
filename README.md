@@ -458,37 +458,82 @@ The Git Flow workflow is used to manage source code, branching, and releases. He
 
 ![GitFlow Diagram](./docs/git-flow.png)
 
-## Trello Board
+## 📌 GitHub Projects Board: Kanban for Agile Project Management & Sprint Planning
 
-Organised task management using Trello demonstrates efficient project tracking.
+To ensure efficient project tracking and agile preparation for Part B, we utilize a Kanban-style GitHub Projects board, central to visualizing workflow and managing tasks throughout the Merry Berry project.  We consistently adhere to **simple and clear Kanban standards**, evidenced in the dated screenshots below, which also illustrate our sprint planning for Part B development.
 
-### 📋 Board Structure & Standards
+### Screenshots (Throughout Part A Documentation):**
 
-To maintain clarity, consistency, and effective project management, we have established and rigorously adhered to the following standards for our GitHub Projects board usage:
+#### Early Stage (Feb 9th)
+![Early Stage](./docs/kanban/kanban_board_early_stage.png)
 
-*   **Card Naming Convention:**  Cards are consistently named using the format `[Feature Area] - [Concise Task Description]`. This ensures that each task is clearly identifiable and categorized by its relevant feature area.  *(Example: `Menu Browsing - Implement Category Filtering`, `Authentication - Set up JWT Login`)*.
-*   **Label Usage:**  We utilize a comprehensive set of labels to categorize tasks by functional area and priority. Our labels include:
-    *   `Frontend`: Tasks related to front-end development.
-    *   `Backend`: Tasks related to back-end development.
-    *   `Database`: Tasks involving database design or implementation.
-    *   `UI/UX`: Tasks focused on user interface and user experience design.
-    *   `Bug`:  Cards representing bug fixes.
-    *   `Enhancement`: Cards for feature enhancements or improvements.
-    *   `Urgent`: Tasks requiring immediate attention.
-    *   `High Priority`: Important tasks that need to be addressed promptly.
-*   **Assignee Usage:**  Every GitHub Projects card is assigned to a specific team member who is directly responsible for completing the task. This ensures clear accountability and ownership of all project tasks.
-*   **Workflow - List Structure:**  Our board follows a standard Kanban workflow using the following lists to represent task status:
-    *   `To Do`:  For tasks that are yet to be started and are prioritized for upcoming work.
-    *   `In Progress`:  For tasks that are currently being actively worked on by assigned team members.
-    *   `Testing`:  For tasks that have been developed and are now undergoing testing and quality assurance.
-    *   `Done`:  For tasks that have been successfully completed, tested, and are considered finished.
+#### Mid Stage (Feb 11th)
+![Mid Stage](./docs/kanban/kanban_board_mid_stage.png)
 
-By consistently applying these standards, we ensure our GitHub Projects board is not only a task repository but a dynamic and actively managed tool for effective project execution.
+#### Late Stage (Feb 14th)
+![Late Stage](./docs/kanban/kanban_board_late_stage.png)
 
-### 🖼️ GitHub Projects Screenshots
+These screenshots, alongside the following standards, demonstrate our organized Kanban approach and Part B sprint planning.
 
-Screenshots of our actively managed GitHub Projects board, demonstrating adherence to the standards outlined above and showcasing the project's task workflow, are available in the [`docs/kanban/`](./docs/kanban/) directory.  These screenshots visually evidence our commitment to organized project management and the consistent application of our defined GitHub Projects standards throughout the development process.  They illustrate card naming conventions, label usage, assignee visibility, and the movement of tasks across the Kanban workflow lists, reflecting a dynamic and actively managed project.
+### 📋 Kanban Board Standards: Clear, Simple, and Consistently Applied
 
-### 🚀 Reflection on GitHub Projects Usage
+Our GitHub Projects board adheres to these key standards:
 
-Utilizing GitHub Projects has significantly improved our project management by providing a clear visual overview of task progress and responsibilities. The Kanban board structure has facilitated better team collaboration and ensured we are consistently tracking and managing our tasks throughout the development process, contributing to a more organized and efficient workflow.  GitHub Projects has been instrumental in maintaining project visibility, promoting accountability, and streamlining our agile development approach.
+#### ✔️ Consistent Card Naming:  `[Feature Area] - [Concise Task Description]`
+
+Uniform card naming using `[Feature Area] - [Concise Task Description]` (e.g., `[README] - HD Polish & Proofread`) ensures immediate task identification and categorization, as shown in the **"Issues List View" screenshot**.
+
+#### ✔️ Meaningful Label Usage:  Categorization, Priority, Workload
+
+Diverse labels categorize tasks for clarity:
+
+*   **Documentation Type:** `Wireframes`, `User Stories`, `AAD`, `DFD`, `Kanban`, `README` (visually categorized in **"Issues List View" screenshot**).
+*   **Priority:** `Urgent` (`P0`), `High` (`P1`), `Medium` (`P2`) (priority labels in **"Kanban Board Overview" screenshots**).
+*   **Size Estimate:** `XS`, `S`, `M`, `L`, `XL` (for workload awareness).
+
+**The "Issues List View" screenshot effectively showcases this varied and meaningful label application.**
+
+#### ✔️ Clear Assignee Usage:  Accountability
+
+Each task is assigned to a team member for accountability, clearly visible by avatars in **"Kanban Board Overview" screenshots** within "In progress" and "In review" columns.
+
+#### ✔️ Well-Defined Kanban Workflow:  Progress Tracking
+
+Workflow columns track task status:
+
+*   **Backlog:** Prioritized tasks (P0-P2 labels), ready for "Ready".
+*   **Ready: Requirements Clear & Capacity Available:** Queue for "In progress".
+*   **In progress:** Tasks actively being worked on.
+*   **In review: Awaiting Quality Assurance Review.**
+*   **Done:** Completed, reviewed tasks.
+
+**"Kanban Board Overview" screenshots demonstrate tasks moving through these workflow stages throughout Part A.** Column descriptions on our live board further clarify each stage (e.g., "Ready: Requirements Clear & Capacity Available").
+
+#### ✔️ Granular Checklists:  Subtask Management
+
+Checklists within Issue cards break down complex tasks into sub-steps, exemplified in the **"Example Issue Detail" screenshot**.
+
+### 🗓️ Sprint Planning for Part B:  Kanban-Informed Development Sprints
+
+Extending Kanban, we planned Part B sprints around client/server milestones.  Sprints are timeboxed (e.g., 1-week), iterative, and goal-focused.  **Example: Backend Sprint 1 (Core API & Database Setup):**
+
+*   **Goal:**  Establish foundational backend.
+*   **Tasks (from Kanban Backlog):**
+    *   `[Backend] - Set up Backend Project & MongoDB Database` ([Team Member])
+    *   `[Backend] - Implement User Model & Auth API` ([Team Member])
+    *   `[Database] - Design MongoDB Schemas (User, Menu)` ([Team Member])
+
+Sprint backlogs are created by selecting prioritized tasks from Kanban "Backlog," utilizing priority and size labels for delegation.
+
+### 🚀 Reflection:  HD Project Management - Kanban Throughout & Sprint-Ready
+
+Our Kanban board, evidenced by dated screenshots, demonstrates consistently applied, simple and clear standards for HD project management throughout Part A and informs our sprint-based approach for Part B.  This agile methodology ensures transparency, accountability, and organized progress from documentation to development.
+
+#### Kanban Board Overview
+![Kanban Board Overview](./docs/kanban/kanban_board_overview.png)
+
+#### Issues List View
+![Issues List View - Showing Card Names and Labels](./docs/kanban/kanban_board_issues_list_hd_labels.png)
+
+#### Example Issue Detail
+![Example Issue Detail](./docs/kanban/kanban_example_issue.png)
