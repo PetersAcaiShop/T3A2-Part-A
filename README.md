@@ -22,6 +22,7 @@
     - [🔐 Authentication (JWT & OAuth2)](#-authentication-jwt--oauth2)
     - [📱 Responsive Design](#-responsive-design)
   - [🎯 Target Audience](#target-audience)
+  - [📖 User Stories](#user-stories)
   - [📐 Wireframes](#wireframes)
     - [🖼️ Screenshots](#screenshots)
   - [📌 GitHub Projects Board](#GitHub Projects-board)
