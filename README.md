@@ -298,6 +298,8 @@ We have chosen `React.js` for the front-end to build a dynamic and responsive us
 
 ## 🗺️ Dataflow Diagram: Visualizing Data Flow as a User Journey in the Merry Berry System
 
+Note: Returning responses are shown in parentheses.
+
 ![Dataflow Diagram](./docs/diagrams/DFD.png)
 
 To comprehensively illustrate the flow of data within the Merry Berry Smoothie & Açaí Shop Online Ordering App, we have chosen to represent the data flow using a **Sequence Diagram**.  While traditional Dataflow Diagrams (DFDs) often focus on processes and data stores in a static manner, we believe a Sequence Diagram provides a more insightful and user-centric visualization for this application. Our Sequence Diagram effectively demonstrates the **step-by-step user journey** through the online ordering process, clearly showing the **sequence of data exchanges** that occur between the Customer and various system components.  This approach allows for a dynamic understanding of data flow within the application's key workflows, ensuring data integrity and a seamless user experience.
