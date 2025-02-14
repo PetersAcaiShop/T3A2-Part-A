@@ -2,31 +2,84 @@
 
 ## Table of Contents
 
-- [🥤 Smoothie & Açaí Shop Online Ordering App](#smoothie--açaí-shop-online-ordering-app)
-  - [📌 Project Overview](#project-overview)
-    - [🏆 Core Objectives](#core-objectives)
-    - [🛠️ Tech Stack](#tech-stack)
-  - [🗺️ Dataflow Diagram](#dataflow-diagram)
-    - [🔑 Key Components](#key-components)
-  - [🏗️ Application Architecture](#application-architecture)
-    - [📂 Layers](#layers)
-  - [🚀 Features](#features)
+- [Smoothie \& Açaí Shop Online Ordering App](#smoothie--açaí-shop-online-ordering-app)
+  - [Table of Contents](#table-of-contents)
+  - [Project Overview](#project-overview)
+  - [🎯 Purpose of the **Merry Berry Smoothie \& Açaí Shop** Project](#-purpose-of-the-merry-berry-smoothie--açaí-shop-project)
+  - [🌟 Vision](#-vision)
+  - [🏆 **Core Objectives:**](#-core-objectives)
+    - [1. **Empower Healthy Eating:**](#1-empower-healthy-eating)
+    - [2. **Provide a Seamless Digital Ordering Experience:**](#2-provide-a-seamless-digital-ordering-experience)
+    - [3. **Efficient Order Management:**](#3-efficient-order-management)
+    - [4. **Integration of Secure Payment Solutions:**](#4-integration-of-secure-payment-solutions)
+    - [5. **Offer Personalization and Flexibility:**](#5-offer-personalization-and-flexibility)
+    - [6. **Promote Customer Engagement:**](#6-promote-customer-engagement)
+  - [Features](#features)
     - [🍓 Browse Menu](#-browse-menu)
-    - [🥤 Customize Orders](#-customize-orders)
-    - [🛒 Persistent Shopping Cart](#-persistent-shopping-cart-frontend-state)
-    - [🛍️ Order Management & History](#-order-management--history)
+    - [🥤 Customise Orders](#-customise-orders)
+    - [🛒 Persistent Shopping Cart (Frontend State)](#-persistent-shopping-cart-frontend-state)
+    - [🛍️ Order Management \& History](#️-order-management--history)
     - [📊 Real-Time Order Tracking](#-real-time-order-tracking)
     - [🔒 Secure Payment Processing](#-secure-payment-processing)
-    - [💰 Promo Codes & Discounts](#-promo-codes--discounts)
-    - [⭐ User Reviews & Ratings](#-user-reviews--ratings)
-    - [🔐 Authentication (JWT & OAuth2)](#-authentication-jwt--oauth2)
+    - [💰 Promo Codes \& Discounts](#-promo-codes--discounts)
+    - [⭐ User Reviews \& Ratings](#-user-reviews--ratings)
+    - [🔐 Authentication (JWT \& OAuth2)](#-authentication-jwt--oauth2)
+      - [**JWT Authentication**](#jwt-authentication)
+      - [**OAuth2 Authentication**](#oauth2-authentication)
+      - [**Secure Routes and Role-Based Access**](#secure-routes-and-role-based-access)
+      - [**Logout:**](#logout)
+      - [**Token Expiry \& Refresh Tokens**](#token-expiry--refresh-tokens)
+      - [Summary of Authentication Features:](#summary-of-authentication-features)
     - [📱 Responsive Design](#-responsive-design)
-  - [🎯 Target Audience](#target-audience)
-  - [📖 User Stories](#user-stories)
-  - [📐 Wireframes](#wireframes)
-    - [🖼️ Screenshots](#screenshots)
-  - [📌 GitHub Projects Board](#GitHub Projects-board)
-    - [📋 Board Structure](#board-structure)
+  - [🎯 **Target Audience**](#-target-audience)
+    - [**👥  Health-Conscious Consumers 🥑**](#--health-conscious-consumers-)
+    - [**👥  Fitness Enthusiasts \& Athletes 🏋️‍♂️**](#--fitness-enthusiasts--athletes-️️)
+    - [**👥 Busy Professionals \& Students 📚**](#-busy-professionals--students-)
+    - [**👥 Tech-Savvy Digital Shoppers 📱**](#-tech-savvy-digital-shoppers-)
+    - [**👥 Local Community \& Regular Customers 🏡**](#-local-community--regular-customers-)
+  - [Tech Stack](#tech-stack)
+    - [Tech Stack Justification](#tech-stack-justification)
+  - [🗺️ Dataflow Diagram: Visualizing Data Flow as a User Journey in the Merry Berry System](#️-dataflow-diagram-visualizing-data-flow-as-a-user-journey-in-the-merry-berry-system)
+    - [🔑 Key Components of our Sequence Diagram for Data Flow](#-key-components-of-our-sequence-diagram-for-data-flow)
+  - [🏗️ Application Architecture Diagram: Layered Structure for Scalability and Maintainability](#️-application-architecture-diagram-layered-structure-for-scalability-and-maintainability)
+    - [📂 Layers of the Application Architecture](#-layers-of-the-application-architecture)
+  - [User Stories: Persona-Driven Feature Development \& Refinement](#user-stories-persona-driven-feature-development--refinement)
+  - [Persona 1: Emily - The Fitness-Focused Health Seeker](#persona-1-emily---the-fitness-focused-health-seeker)
+    - [User Story 1: Browse Menu with Dietary Filters and Visual Appeal](#user-story-1-browse-menu-with-dietary-filters-and-visual-appeal)
+      - [Revision History:](#revision-history)
+    - [User Story 2: Customize Orders for Personalized Nutrition](#user-story-2-customize-orders-for-personalized-nutrition)
+    - [User Story 3: Track Order Status in Real-Time for Time Management](#user-story-3-track-order-status-in-real-time-for-time-management)
+  - [Persona 2: John - The Busy Professional Seeking Quick \& Healthy Lunch](#persona-2-john---the-busy-professional-seeking-quick--healthy-lunch)
+    - [User Story 4: Quick Reorder of Favorite Items for Lunchtime Efficiency](#user-story-4-quick-reorder-of-favorite-items-for-lunchtime-efficiency)
+      - [Revision History:](#revision-history-1)
+    - [Persona 3: Maria - The Shop Owner Optimizing Operations](#persona-3-maria---the-shop-owner-optimizing-operations)
+    - [User Story 5: Real-Time Order Management Dashboard for Operational Efficiency](#user-story-5-real-time-order-management-dashboard-for-operational-efficiency)
+    - [Persona 4: Sarah - The First-Time App User Seeking Easy Onboarding](#persona-4-sarah---the-first-time-app-user-seeking-easy-onboarding)
+    - [User Story 6: Interactive Onboarding Tutorial for Seamless First Experience](#user-story-6-interactive-onboarding-tutorial-for-seamless-first-experience)
+    - [User Story 7:  Visible Discounts and Promotions to Incentivize First Order](#user-story-7--visible-discounts-and-promotions-to-incentivize-first-order)
+  - [📐 Wireframes](#-wireframes)
+    - [Screenshots](#screenshots)
+  - [Git Workflow Using Git Flow](#git-workflow-using-git-flow)
+    - [Main Branches](#main-branches)
+    - [Supporting Branches](#supporting-branches)
+    - [Workflow](#workflow)
+  - [📌 GitHub Projects Board: Kanban for Agile Project Management \& Sprint Planning](#-github-projects-board-kanban-for-agile-project-management--sprint-planning)
+    - [Screenshots (Throughout Part A Documentation):\*\*](#screenshots-throughout-part-a-documentation)
+      - [Early Stage (Feb 9th)](#early-stage-feb-9th)
+      - [Mid Stage (Feb 11th)](#mid-stage-feb-11th)
+      - [Late Stage (Feb 14th)](#late-stage-feb-14th)
+    - [📋 Kanban Board Standards: Clear, Simple, and Consistently Applied](#-kanban-board-standards-clear-simple-and-consistently-applied)
+      - [✔️ Consistent Card Naming:  `[Feature Area] - [Concise Task Description]`](#️-consistent-card-naming--feature-area---concise-task-description)
+      - [✔️ Meaningful Label Usage:  Categorization, Priority, Workload](#️-meaningful-label-usage--categorization-priority-workload)
+      - [✔️ Clear Assignee Usage:  Accountability](#️-clear-assignee-usage--accountability)
+      - [✔️ Well-Defined Kanban Workflow:  Progress Tracking](#️-well-defined-kanban-workflow--progress-tracking)
+      - [✔️ Granular Checklists:  Subtask Management](#️-granular-checklists--subtask-management)
+    - [🗓️ Sprint Planning for Part B:  Kanban-Informed Development Sprints](#️-sprint-planning-for-part-b--kanban-informed-development-sprints)
+    - [🚀 Reflection:  HD Project Management - Kanban Throughout \& Sprint-Ready](#-reflection--hd-project-management---kanban-throughout--sprint-ready)
+      - [Kanban Board Overview](#kanban-board-overview)
+      - [Issues List View](#issues-list-view)
+      - [Example Issue Detail](#example-issue-detail)
+
 
 
 ## Project Overview
@@ -403,11 +456,19 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 
 **Revision Rationale:** Initial feedback suggested that while the user story addressed John's need for speed, the 'Why' section could be more impactful and emotionally resonant.  Users emphasized that for busy professionals, lunch breaks are not just about sustenance but also about *mental respite and stress reduction*.  The revised user story strengthens the 'Why' to highlight the *value of reclaimed personal time during lunch breaks* and the feature's role in making lunch a true break for John.  Furthermore, based on usability considerations for frequent reordering, the revised user story explicitly requests the reorder functionality to be accessible directly from the *homepage*, making it even more efficient and prominent for users like John who prioritize speed and ease of access.
 
+### Persona 3: Maria - The Shop Owner Optimizing Operations
+
+**Persona Description:** Maria, 40, is the owner and hands-on manager of the Merry Berry Smoothie & Açaí Shop, a thriving local business she built from the ground up. She is deeply passionate about providing healthy and delicious options to her community and takes pride in the quality and freshness of her ingredients. Maria is now focused on efficiently managing her shop's increasingly busy operations, especially with the growing volume of online orders. She needs tools to streamline order management, understand customer preferences to refine her menu and marketing, and ultimately ensure customer satisfaction and maintain profitability in a competitive market. Maria is tech-literate but prioritizes practical, user-friendly solutions that directly improve her business efficiency and customer service.
+
 ### User Story 5: Real-Time Order Management Dashboard for Operational Efficiency
 
 - **What:** As Maria, the **Shop Owner Optimizing Operations**, I need a comprehensive and real-time dashboard that allows me to efficiently view and manage all incoming online orders, track their status, and prioritize them effectively.  The dashboard should display key order details, customer notes, and order history.
 
 - **Why:** To effectively prioritize and fulfill incoming orders in a timely manner, **enabling me to optimize my shop's operations, minimize customer wait times, reduce order errors, and ultimately increase customer satisfaction and repeat business.  Real-time order visibility is crucial for efficient workflow management within my shop and ensuring smooth service during peak hours.** *My shop's success hinges on operational efficiency and customer happiness.  A real-time dashboard is not just a tool for managing orders; it's the central nervous system of my online business. It empowers me to proactively manage workflow, anticipate bottlenecks during peak hours, and ensure every customer receives prompt and accurate service. This level of operational control directly translates to improved customer loyalty and a thriving business.*
+
+### Persona 4: Sarah - The First-Time App User Seeking Easy Onboarding
+
+**Persona Description:** Sarah, 22, is a tech-savvy college student studying environmental science at a local university. She is actively exploring healthy food options in her area as she tries to adopt a more balanced and sustainable lifestyle. Sarah is very comfortable with mobile apps and online ordering, using them daily for various aspects of her life, from social media to food delivery. When trying a new app, especially for food ordering, she appreciates a smooth, intuitive, and visually appealing onboarding experience. Sarah is also budget-conscious, relying on student loans and part-time work, so she is always on the lookout for good value and any promotions or discounts, especially for first-time users.
 
 ### User Story 6: Interactive Onboarding Tutorial for Seamless First Experience
 
