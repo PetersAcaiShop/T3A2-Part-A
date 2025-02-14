@@ -297,28 +297,59 @@ We have chosen `React.js` for the front-end to build a dynamic and responsive us
 `MongoDB`'s NoSQL nature allows for flexible data schemas, accommodating the evolving needs of our menu and user data. 
 `Figma` was selected for collaborative and iterative wireframing and UI design.
 
-## 🗺️ Dataflow Diagram: Visualizing Data Flow as a User Journey in the Merry Berry System
+## 🗺️ Dataflow Diagram: Visualizing Data Flow within the Merry Berry System (Traditional DFD)
 
-To comprehensively illustrate the flow of data within the Merry Berry Smoothie & Açaí Shop Online Ordering App, we have chosen to represent the data flow using a **Sequence Diagram**.  While traditional Dataflow Diagrams (DFDs) often focus on processes and data stores in a static manner, we believe a Sequence Diagram provides a more insightful and user-centric visualization for this application. Our Sequence Diagram effectively demonstrates the **step-by-step user journey** through the online ordering process, clearly showing the **sequence of data exchanges** that occur between the Customer and various system components.  This approach allows for a dynamic understanding of data flow within the application's key workflows, ensuring data integrity and a seamless user experience.
+To comprehensively illustrate the flow of data within the Merry Berry Smoothie & Açaí Shop Online Ordering App, we are utilizing a **Dataflow Diagram (DFD)**.  This diagram adheres to standard DFD conventions to clearly depict the processes within our system, the external entities that interact with it, the data stores, and the flow of data between these components.  This traditional DFD provides a clear and concise overview of the system's data handling, ensuring a strong understanding of data sources, destinations, and storage.
 
-### 🔑 Key Components of our Sequence Diagram for Data Flow
+### 🔑 Key Components of our Dataflow Diagram
 
-Our Sequence Diagram explicitly identifies and depicts the following key components, adapted to represent data flow within a sequential interaction model:
+Our Dataflow Diagram explicitly identifies and depicts the following key components, adhering to standard DFD notation:
 
-*   **Participants:** In our Sequence Diagram, **Participants** represent the key actors and components involved in the data flow. These correspond to elements typically found in a DFD, but are visualized in terms of their interaction sequence:
-    *   **Customer (Alice):** Representing the user interacting with the Merry Berry application, initiating requests and receiving data. This aligns with the **External Entity** concept in traditional DFDs.
-    *   **Browse Menu Items, Customize Order, Add to Cart, View Cart, Place Order, Validate Promo Code, Process Payment, Track Order Status, User Authentication, Submit Review, View Reviews:** These **Participants** represent the **Processes** within the Merry Berry system that handle specific actions and data transformations during the user journey.
-    *   **MongoDB Database:** Represented as a **Participant**, this signifies the **Data Store** where data is persisted and retrieved throughout the application's operation.
-    *   **Payment Gateway (Stripe):**  Also a **Participant**, representing the **External Entity** responsible for handling payment processing outside of our core system.
+*   **External Entities (Sources and Destinations of Data):** These are entities outside the system that either provide data to the system or receive data from it. In our DFD, we have:
 
-*   **Messages:**  **Messages** in our Sequence Diagram illustrate the **Data Flows** between Participants. Each message, represented by an arrow, is clearly labeled to indicate the specific data being transferred or the action being initiated.  These messages demonstrate how data moves sequentially through the system as the user progresses through the ordering process. Examples include:
-    *   `Menu Item Request`: A message from the Customer to the `Browse Menu Items` process, initiating the retrieval of menu data.
-    *   `Retrieve Menu Data`: A message from the `Browse Menu Items` process to the `MongoDB Database`, demonstrating data retrieval from the data store.
-    *   `Customization Selections`: A message from the Customer to the `Customize Order` process, carrying the user's choices for order modifications.
-    *   `Payment Information`: A message from the `Place Order` process to the `Process Payment` process, transferring sensitive payment details for transaction handling.
-    *   `Order Status Updates`: A message from the `Track Order Status` process back to the Customer, providing real-time order progress information.
+    *   **Alice (Customer):** Represented as a rectangle, Alice is the primary external entity interacting with the Merry Berry system. She initiates requests (e.g., Menu Item Request, Customization Selections, Place Order Request, Order Tracking Request, Auth Request, Submit Review, View Reviews Request) and receives responses (e.g., Display Menu Items, Cart Update Confirmation, Order Confirmation, Order Status Updates, Auth Token [JWT], Review Submission Confirmation, Display Product Reviews).
+    *   **Payment Gateway (Stripe):** Represented as a rectangle, the Payment Gateway is an external system responsible for processing payments.  Our system sends Payment Information to the Payment Gateway and receives Payment Data (Payment Status) in response.
 
-![Sequence Diagram for Data Flow](./docs/diagrams/dataflow_diagram.png)
+*   **Processes (Data Transformations):** Represented as circles, these are the actions or transformations performed by the system on the data. Our DFD includes the following key processes:
+
+    *   **Browse Menu Items:**  This process handles the "Menu Item Request" from Alice. It retrieves menu data from the MongoDB data store and provides (Display Menu Items) back to Alice.
+    *   **Customize Order:**  This process receives "Customization Selections" from Alice and uses this input to manage order customization details. It provides (Customized Item Options) back to Alice.
+    *   **Add to Cart:** This process handles the "Add Item to Cart Request" from Alice, updating the cart items. It sends (Cart Update Confirmation) back to Alice.
+    *   **View Cart:** This process handles the "View Cart Request" from Alice, retrieving cart details. It provides (Cart Items & Summary) back to Alice.
+    *   **Place Order:** This process handles the "Place Order Request" from Alice. It receives "Payment Information" and "Promo Code" data, interacts with the "Validate Promo Code" and "Process Payment" processes, and stores order details in the MongoDB data store. It sends (Order Confirmation) back to Alice.
+    *   **Validate Promo Code:** This process receives "Promo Code" data from the "Place Order" process. It retrieves promo codes from the MongoDB data store and provides (Validation Result) back to the "Place Order" process.
+    *   **Process Payment:** This process receives "Payment Information" from the "Place Order" process and interacts with the "Payment Gateway" to process the payment. It receives (Payment Status) from the "Payment Gateway" and provides (Payment Result) back to the "Place Order" process.
+    *   **Track Order Status:** This process handles the "Order Tracking Request" from Alice. It retrieves order status from the MongoDB data store and provides (Order Status Updates) back to Alice.
+    *   **User Authentication:** This process handles the "Auth Request [Login/Register]" from Alice, verifying user credentials against data in MongoDB. It provides (Auth Token [JWT]) back to Alice.
+    *   **Submit Review:** This process handles the "Submit Review & Rating" from Alice. It stores user reviews and ratings in the MongoDB data store and provides (Review Submission Confirmation) back to Alice.
+    *   **View Reviews:** This process handles the "View Reviews Request" from Alice. It retrieves product reviews from the MongoDB data store and provides (Display Product Reviews) back to Alice.
+
+*   **Data Store (Data at Rest):** Represented as an open-ended rectangle, this is where the system stores persistent data. In our DFD, we have:
+
+    *   **MongoDB Database:** This data store holds various collections including Menu Data, Order Details, Promo Codes, User Credentials, and User Reviews & Ratings. It serves as the central repository for the application's persistent data.
+
+*   **Data Flows (Data in Motion):** Represented as arrows, these indicate the movement of data between external entities, processes, and data stores.  The arrows are labeled to clearly indicate the data being transferred.  Examples include:
+
+    *   `Menu Item Request` (from Alice to "Browse Menu Items")
+    *   `Display Menu Items` (from "Browse Menu Items" to Alice)
+    *   `Retrieve Menu Data` (from "Browse Menu Items" and "Validate Promo Code" and "View Reviews" to MongoDB)
+    *   `Customization Selections` (from Alice to "Customize Order")
+    *   `Cart Update Confirmation` (from "Add to Cart" to Alice)
+    *   `Get Cart Details` (from "View Cart" to "Add to Cart")
+    *   `Order Confirmation` (from "Place Order" to Alice)
+    *   `Payment Information` (from "Place Order" to "Process Payment")
+    *   `Payment Data` (from "Payment Gateway" to "Process Payment")
+    *   `Order Status Updates` (from "Track Order Status" to Alice)
+    *   `Auth Token [JWT]` (from "User Authentication" to Alice)
+    *   `Review Submission Confirmation` (from "Submit Review" to Alice)
+    *   `Display Product Reviews` (from "View Reviews" to Alice)
+    *   `Store Order Details` (from "Place Order" to MongoDB)
+    *   `Retrieve Promo Codes` (from "Validate Promo Code" to MongoDB)
+    *   `Store User Review & Rating` (from "Submit Review" to MongoDB)
+    *   `Verify User Credentials` (from "User Authentication" to MongoDB)
+    *   `Retrieve Order Status` (from "Track Order Status" to MongoDB)
+
+![Dataflow Diagram](./docs/diagrams/dataflow_diagram.png)
 
 ---
 
