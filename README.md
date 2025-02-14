@@ -92,20 +92,25 @@ Customers can personalize their orders based on preferences such as size, toppin
 - **Topping Choices:** Customers can choose from a predefined list of toppings, such as chia seeds, honey, or protein powder, with pricing shown for each.
 - **Special Instructions:** Customers can add free-text notes (e.g., "Less ice, please").
 
-### 🛒 Persistent Shopping Cart (Frontend State)
+### 🛒 Persistent Shopping Cart (Frontend Local storage)
 
 **Feature:**
-Customers can build their cart dynamically, and the cart remains available even if they leave the page.
+Customers can dynamically build their cart, and the cart remains available even if they leave the page or refresh it.
 
 **Details:**
 
-- **Cart Stored on Frontend:** The cart is managed using React state (or a similar approach) instead of storing it in a database.
-- **Persistence:** Even after a page refresh, the cart remains available by saving items in local storage.
+
+- **Cart Stored on Frontend:** The cart is managed using React state and persisted in **local storage** instead of storing it in a database.
+- **Persistence:** Even after a page refresh, the cart remains available because items are saved in **local storage**.
+
 - **Real-Time Updates:** Users can:
   - Add items with customized options.
   - Remove individual items or clear the entire cart.
   - Modify existing items (e.g., changing the quantity or toppings).
 - **Cart Summary:** Displays itemized costs, subtotal, and estimated total before checkout.
+
+
+This ensures a seamless shopping experience, allowing users to retain their cart contents across sessions.
 
 ### 🛍️ Order Management & History
 
