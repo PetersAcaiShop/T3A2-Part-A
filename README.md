@@ -90,6 +90,7 @@
       - [Kanban Board Overview](#kanban-board-overview)
       - [Issues List View](#issues-list-view)
       - [Example Issue Detail](#example-issue-detail)
+      - [Link to Project Board](#link-to-project-board)
 
 ## Project Overview
 
@@ -626,95 +627,58 @@ These wireframes are medium-fidelity and explicitly demonstrate our iterative de
 <img src="./docs/wireframes/new/desktop/home.png" alt="New Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Revised Home (Desktop Example)**
 
-*   **Iteration Highlight - Hero Section:**
-    *   **Original:**  Basic hero section, generic placeholder text, less visually engaging.
-    *   **Revised:**  Enhanced hero with more compelling layout, improved visual hierarchy within the section, clearer "Call To Action" button placement for better user guidance.  *Revision aimed for a more impactful first impression and clearer direction for the user.*
-*   **Iteration Highlight - Featured Items:**
-    *   **Original:** Simple list of "Featured Items" with basic layout.
-    *   **Revised:** More visually distinct "Featured Items" section with improved spacing and visual separation, enhancing scannability and drawing more attention to featured products. *Revision focused on improving visual appeal and product discoverability.*
 
 #### Menu (Desktop) - Original vs. Revised
 
-[Insert **Original** Desktop Menu Wireframe Image (from `docs/wireframes/old`)]
+<img src="./docs/wireframes/old/desktop/menu.png" alt="Old Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Original Menu (Desktop Example)**
 
-[Insert **Revised** Desktop Menu Wireframe Image (from `docs/wireframes/new`)]
+<img src="./docs/wireframes/new/desktop/menu.png" alt="New Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Revised Menu (Desktop Example)**
 
-*   **Iteration Highlight - Category Presentation:**
-    *   **Original:** Basic category headings, menu items listed somewhat uniformly.
-    *   **Revised:**  Visually clearer category separation and grouping, improved item spacing within categories for better readability and visual organisation. *Revision focused on enhancing menu structure and reducing visual clutter for easier browsing.*
-*   **Iteration Highlight - "Details..." Links:**
-    *   **Original:** Simple "Details..." links.
-    *   **Revised:**  Slightly more visually distinct "Details..." links for improved discoverability and tap target size on touch-enabled desktops (if applicable), enhancing action clarity. *Revision focused on subtle UI improvements for usability.*
+
 
 ### Mobile Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` & `docs/wireframes/new`)
 
 #### Home (Mobile) - Original vs. Revised
 
-[Insert **Original** Mobile Home Wireframe Image (from `docs/wireframes/old`)]
+<img src="./docs/wireframes/old/mobile/home.png" alt="Old Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Original Home (Mobile Example)**
 
-[Insert **Revised** Mobile Home Wireframe Image (from `docs/wireframes/new`)]
+<img src="./docs/wireframes/new/mobile/home.png" alt="New Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Revised Home (Mobile Example)**
 
-*   **Iteration Highlight - "Get Started" Section:**
-    *   **Original:** Basic "Get Started" section, less prominent placement.
-    *   **Revised:**  More prominent and visually distinct "Get Started" section, moved higher in the layout for increased visibility on mobile, stronger call to action. *Revision prioritised key action visibility on limited mobile screen space.*
-*   **Iteration Highlight - Motivation Points:**
-    *   **Original:** Simple stacked motivation points.
-    *   **Revised:**  Improved visual styling of motivation points for better readability and visual engagement within the limited mobile viewport. *Revision focused on enhancing visual communication within constraints of mobile layout.*
 
 #### Menu (Mobile) - Original vs. Revised
 
-[Insert **Original** Mobile Menu Wireframe Image (from `docs/wireframes/old`)]
+<img src="./docs/wireframes/old/mobile/menu.png" alt="Old Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Original Menu (Mobile Example)**
 
-[Insert **Revised** Mobile Menu Wireframe Image (from `docs/wireframes/new`)]
+<img src="./docs/wireframes/new/mobile/menu.png" alt="New Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Revised Menu (Mobile Example)**
-
-*   **Iteration Highlight - Item Spacing & Visual Grouping:**
-    *   **Original:**  Menu items closely spaced, less visual separation.
-    *   **Revised:**  Increased spacing between menu items and clearer visual grouping, improving readability and reducing visual density on the vertically scrolling mobile menu. *Revision focused on enhancing readability and scannability on mobile.*
-*   **Iteration Highlight - Image Size (Subtle Adjustment):**
-    *   **Original:**  Slightly larger images (potentially).
-    *   **Revised:**  Minor adjustment to image size (potentially slightly smaller) for better balance with text content and improved vertical flow on mobile, optimising content density without compromising visual appeal. *Revision focused on fine-tuning image-to-text ratio for mobile context.*
 
 ### Tablet Wireframes: Iteration Examples (Full Sets in `docs/wireframes/old` & `docs/wireframes/new`)
 
 #### Home (Tablet) - Original vs. Revised
 
-[Insert **Original** Tablet Home Wireframe Image (from `docs/wireframes/old`)]
+<img src="./docs/wireframes/old/tablet/home.png" alt="Old Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Original Home (Tablet Example)**
 
-[Insert **Revised** Tablet Home Wireframe Image (from `docs/wireframes/new`)]
+<img src="./docs/wireframes/new/tablet/home.png" alt="New Home Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Revised Home (Tablet Example)**
 
-*   **Iteration Highlight - Hero Section and Content Balance:**
-    *   **Original:**  Tablet hero section possibly less distinct from desktop.
-    *   **Revised:**  Refined tablet hero section to better leverage tablet screen size, potentially adjusting font sizes, spacing, or layout elements to be optimally viewed and interacted with on a tablet, creating a distinct tablet experience. *Revision focused on tailoring the hero section for the specific tablet context.*
-*   **Iteration Highlight - "Featured Items" (Tablet Context):**
-    *   **Original:** Tablet featured items layout potentially similar to desktop.
-    *   **Revised:**  Adjusted "Featured Items" layout for tablet, potentially using a slightly modified grid or carousel to better suit tablet touch interaction and screen dimensions, enhancing user engagement on tablets. *Revision aimed at optimizing "Featured Items" for tablet interaction.*
 
 #### Menu (Tablet) - Original vs. Revised
 
-[Insert **Original** Tablet Menu Wireframe Image (from `docs/wireframes/old`)]
+<img src="./docs/wireframes/old/tablet/menu.png" alt="Old Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Original Menu (Tablet Example)**
 
-[Insert **Revised** Tablet Menu Wireframe Image (from `docs/wireframes/new`)]
+<img src="./docs/wireframes/new/tablet/menu.png" alt="New Menu Wireframe" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 **Revised Menu (Tablet Example)**
-
-*   **Iteration Highlight - Grid Structure Refinement (Tablet):**
-    *   **Original:** Tablet menu grid potentially less optimised for touch.
-    *   **Revised:**  Refined tablet menu grid structure, potentially adjusting column count, item spacing, and touch target sizes to be ideally suited for tablet touch interaction, ensuring comfortable and efficient menu browsing on tablets. *Revision focused on touch optimisation for tablet menu.*
-*   **Iteration Highlight - Visual Hierarchy & Element Sizing (Tablet):**
-    *   **Original:** Tablet visual hierarchy potentially less distinct.
-    *   **Revised:**  Fine-tuned visual hierarchy and element sizing (images, text, links) within tablet menu items to create a more visually appealing and easily scannable menu experience on tablet screens, enhancing overall tablet usability and aesthetics. *Revision aimed at improving visual appeal and scannability specifically for tablet users.*
 
 ---
 
-**This iterative wireframing process, with Original and Revised examples shown above and full sets in `docs/wireframes/old` and `docs/wireframes/new` respectively, clearly demonstrates our commitment to exceptional planning and continuous refinement of our UI/UX design for the Merry Berry application, ensuring a user-centred and responsive experience across all devices.**
+Our iterative wireframing process, with Original and Revised examples shown above, and the full sets in `docs/wireframes/old` and `docs/wireframes/new` respectively, clearly demonstrates our commitment to exceptional planning and continuous refinement of our UI/UX design for the Merry Berry application, ensuring a user-centred and responsive experience across all devices.
 
 ## Git Workflow Using Git Flow
 
@@ -836,3 +800,9 @@ Our Kanban board, evidenced by dated screenshots, demonstrates consistently appl
 #### Example Issue Detail
 
 ![Example Issue Detail](./docs/kanban/kanban_example_issue.png)
+
+#### Link to Project Board
+
+- [GitHub Projects Board](https://github.com/orgs/merry-berry-acai/projects/3)
+- [Backend Part B Board](https://github.com/orgs/merry-berry-acai/projects/4)
+- [Frontend Part B Board](https://github.com/orgs/merry-berry-acai/projects/5)
