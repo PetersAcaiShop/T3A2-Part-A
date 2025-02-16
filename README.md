@@ -32,8 +32,8 @@
       - [Summary of Authentication Features:](#summary-of-authentication-features)
     - [📱 Responsive Design](#-responsive-design)
   - [🎯 **Target Audience**](#-target-audience)
-    - [**👥  Health-Conscious Consumers 🥑**](#--health-conscious-consumers-)
-    - [**👥  Fitness Enthusiasts \& Athletes 🏋️‍♂️**](#--fitness-enthusiasts--athletes-️️)
+    - [**👥 Health-Conscious Consumers 🥑**](#--health-conscious-consumers-)
+    - [**👥 Fitness Enthusiasts \& Athletes 🏋️‍♂️**](#--fitness-enthusiasts--athletes-️️)
     - [**👥 Busy Professionals \& Students 📚**](#-busy-professionals--students-)
     - [**👥 Tech-Savvy Digital Shoppers 📱**](#-tech-savvy-digital-shoppers-)
     - [**👥 Local Community \& Regular Customers 🏡**](#-local-community--regular-customers-)
@@ -56,7 +56,7 @@
     - [User Story 5: Real-Time Order Management Dashboard for Operational Efficiency](#user-story-5-real-time-order-management-dashboard-for-operational-efficiency)
     - [Persona 4: Sarah - The First-Time App User Seeking Easy Onboarding](#persona-4-sarah---the-first-time-app-user-seeking-easy-onboarding)
     - [User Story 6: Interactive Onboarding Tutorial for Seamless First Experience](#user-story-6-interactive-onboarding-tutorial-for-seamless-first-experience)
-    - [User Story 7:  Visible Discounts and Promotions to Incentivize First Order](#user-story-7--visible-discounts-and-promotions-to-incentivize-first-order)
+    - [User Story 7: Visible Discounts and Promotions to Incentivize First Order](#user-story-7--visible-discounts-and-promotions-to-incentivize-first-order)
   - [📐 Wireframes](#-wireframes)
     - [Screenshots](#screenshots)
   - [Git Workflow Using Git Flow](#git-workflow-using-git-flow)
@@ -69,17 +69,16 @@
       - [Mid Stage (Feb 11th)](#mid-stage-feb-11th)
       - [Late Stage (Feb 14th)](#late-stage-feb-14th)
     - [📋 Kanban Board Standards: Clear, Simple, and Consistently Applied](#-kanban-board-standards-clear-simple-and-consistently-applied)
-      - [✔️ Consistent Card Naming:  `[Feature Area] - [Concise Task Description]`](#️-consistent-card-naming--feature-area---concise-task-description)
-      - [✔️ Meaningful Label Usage:  Categorization, Priority, Workload](#️-meaningful-label-usage--categorization-priority-workload)
-      - [✔️ Clear Assignee Usage:  Accountability](#️-clear-assignee-usage--accountability)
-      - [✔️ Well-Defined Kanban Workflow:  Progress Tracking](#️-well-defined-kanban-workflow--progress-tracking)
-      - [✔️ Granular Checklists:  Subtask Management](#️-granular-checklists--subtask-management)
-    - [🗓️ Sprint Planning for Part B:  Kanban-Informed Development Sprints](#️-sprint-planning-for-part-b--kanban-informed-development-sprints)
-    - [🚀 Reflection:  HD Project Management - Kanban Throughout \& Sprint-Ready](#-reflection--hd-project-management---kanban-throughout--sprint-ready)
+      - [✔️ Consistent Card Naming: `[Feature Area] - [Concise Task Description]`](#️-consistent-card-naming--feature-area---concise-task-description)
+      - [✔️ Meaningful Label Usage: Categorization, Priority, Workload](#️-meaningful-label-usage--categorization-priority-workload)
+      - [✔️ Clear Assignee Usage: Accountability](#️-clear-assignee-usage--accountability)
+      - [✔️ Well-Defined Kanban Workflow: Progress Tracking](#️-well-defined-kanban-workflow--progress-tracking)
+      - [✔️ Granular Checklists: Subtask Management](#️-granular-checklists--subtask-management)
+    - [🗓️ Sprint Planning for Part B: Kanban-Informed Development Sprints](#️-sprint-planning-for-part-b--kanban-informed-development-sprints)
+    - [🚀 Reflection: HD Project Management - Kanban Throughout \& Sprint-Ready](#-reflection--hd-project-management---kanban-throughout--sprint-ready)
       - [Kanban Board Overview](#kanban-board-overview)
       - [Issues List View](#issues-list-view)
       - [Example Issue Detail](#example-issue-detail)
-
 
 ## Project Overview
 
@@ -152,7 +151,6 @@ Customers can dynamically build their cart, and the cart remains available even 
 
 **Details:**
 
-
 - **Cart Stored on Frontend:** The cart is managed using React state and persisted in **local storage** instead of storing it in a database.
 - **Persistence:** Even after a page refresh, the cart remains available because items are saved in **local storage**.
 
@@ -161,7 +159,6 @@ Customers can dynamically build their cart, and the cart remains available even 
   - Remove individual items or clear the entire cart.
   - Modify existing items (e.g., changing the quantity or toppings).
 - **Cart Summary:** Displays itemized costs, subtotal, and estimated total before checkout.
-
 
 This ensures a seamless shopping experience, allowing users to retain their cart contents across sessions.
 
@@ -305,75 +302,75 @@ The website is optimized for a seamless shopping experience across mobile, table
 
 ---
 
-## 🎯 **Target Audience**  
+## 🎯 **Target Audience**
 
-The **Merry Berry Smoothie & Açaí Shop** platform is tailored to meet the needs of a diverse customer base that values health, convenience, and digital accessibility. Below is a detailed breakdown of the target audience:  
-
----
-
-### **👥  Health-Conscious Consumers 🥑**  
-
-- Individuals committed to maintaining a healthy diet.  
-- People focused on balanced nutrition and natural ingredients.  
-- Those following dietary plans such as **vegan, keto, high-protein, or gluten-free**.  
-
-🎯 **Why They Need Merry Berry:**  
-
-- Access to **fresh, organic, and nutrient-rich** smoothies and bowls.  
-- Ability to customize orders based on dietary needs.  
-- Transparency in ingredients and nutritional benefits.  
+The **Merry Berry Smoothie & Açaí Shop** platform is tailored to meet the needs of a diverse customer base that values health, convenience, and digital accessibility. Below is a detailed breakdown of the target audience:
 
 ---
 
-### **👥  Fitness Enthusiasts & Athletes 🏋️‍♂️**  
+### **👥 Health-Conscious Consumers 🥑**
 
-- Gym-goers, runners, and sports professionals.  
-- Those seeking **high-protein, low-sugar, or energy-boosting** meal options.  
+- Individuals committed to maintaining a healthy diet.
+- People focused on balanced nutrition and natural ingredients.
+- Those following dietary plans such as **vegan, keto, high-protein, or gluten-free**.
 
-🎯 **Why They Need Merry Berry:**  
+🎯 **Why They Need Merry Berry:**
 
-- **Post-workout recovery** smoothies with protein add-ons.  
-- Easily accessible **nutrient-dense snacks** to fuel workouts.  
-- Ability to track past orders and reorder their favorite blends.  
-
----
-
-### **👥 Busy Professionals & Students 📚**  
-
-- Office workers, entrepreneurs, and students with **hectic schedules**.  
-- People who prefer fast, **on-the-go** meals.  
-
-🎯 **Why They Need Merry Berry:**  
-
-- Quick ordering and **pickup-ready** meals.  
-- Mobile-friendly platform for **ordering during work/study breaks**.  
-- Secure payment processing for fast transactions.  
+- Access to **fresh, organic, and nutrient-rich** smoothies and bowls.
+- Ability to customize orders based on dietary needs.
+- Transparency in ingredients and nutritional benefits.
 
 ---
 
-### **👥 Tech-Savvy Digital Shoppers 📱**  
+### **👥 Fitness Enthusiasts & Athletes 🏋️‍♂️**
 
-- Consumers who prefer **online ordering over in-store purchases**.  
-- Millennials and Gen Z users who engage with brands digitally.  
+- Gym-goers, runners, and sports professionals.
+- Those seeking **high-protein, low-sugar, or energy-boosting** meal options.
 
-🎯 **Why They Need Merry Berry:**  
+🎯 **Why They Need Merry Berry:**
 
-- **User-friendly interface** with smooth browsing and checkout.  
-- **Real-time order tracking** and notifications.  
-- Multiple payment options, including **Apple Pay & Google Pay**.  
+- **Post-workout recovery** smoothies with protein add-ons.
+- Easily accessible **nutrient-dense snacks** to fuel workouts.
+- Ability to track past orders and reorder their favorite blends.
 
 ---
 
-### **👥 Local Community & Regular Customers 🏡**  
+### **👥 Busy Professionals & Students 📚**
 
-- Customers who frequently visit smoothie and açaí bowl shops.  
-- Those who want a **personalized loyalty experience**.  
+- Office workers, entrepreneurs, and students with **hectic schedules**.
+- People who prefer fast, **on-the-go** meals.
 
-🎯 **Why They Need Merry Berry:**  
+🎯 **Why They Need Merry Berry:**
 
-- **Order history & quick reorder** for favorite items.  
-- Access to **promo codes and discounts**.  
-- **In-store pickup & delivery tracking** for added convenience.  
+- Quick ordering and **pickup-ready** meals.
+- Mobile-friendly platform for **ordering during work/study breaks**.
+- Secure payment processing for fast transactions.
+
+---
+
+### **👥 Tech-Savvy Digital Shoppers 📱**
+
+- Consumers who prefer **online ordering over in-store purchases**.
+- Millennials and Gen Z users who engage with brands digitally.
+
+🎯 **Why They Need Merry Berry:**
+
+- **User-friendly interface** with smooth browsing and checkout.
+- **Real-time order tracking** and notifications.
+- Multiple payment options, including **Apple Pay & Google Pay**.
+
+---
+
+### **👥 Local Community & Regular Customers 🏡**
+
+- Customers who frequently visit smoothie and açaí bowl shops.
+- Those who want a **personalized loyalty experience**.
+
+🎯 **Why They Need Merry Berry:**
+
+- **Order history & quick reorder** for favorite items.
+- Access to **promo codes and discounts**.
+- **In-store pickup & delivery tracking** for added convenience.
 
 ## Tech Stack
 
@@ -391,7 +388,7 @@ We have chosen `React.js` for the front-end to build a dynamic and responsive us
 
 ## 🗺️ Dataflow Diagram: Visualizing Data Flow within the Merry Berry System (Traditional DFD)
 
-To comprehensively illustrate the flow of data within the Merry Berry Smoothie & Açaí Shop Online Ordering App, we are utilizing a **Dataflow Diagram (DFD)**.  This diagram adheres to standard DFD conventions to clearly depict the processes within our system, the external entities that interact with it, the data stores, and the flow of data between these components.  This traditional DFD provides a clear and concise overview of the system's data handling, ensuring a strong understanding of data sources, destinations, and storage.
+To comprehensively illustrate the flow of data within the Merry Berry Smoothie & Açaí Shop Online Ordering App, we are utilizing a **Dataflow Diagram (DFD)**. This diagram adheres to standard DFD conventions to clearly depict the processes within our system, the external entities that interact with it, the data stores, and the flow of data between these components. This traditional DFD provides a clear and concise overview of the system's data handling, ensuring a strong understanding of data sources, destinations, and storage.
 
 ### 🔑 Key Components of our Dataflow Diagram
 
@@ -400,12 +397,12 @@ Our Dataflow Diagram explicitly identifies and depicts the following key compone
 - **External Entities (Sources and Destinations of Data):** These are entities outside the system that either provide data to the system or receive data from it. In our DFD, we have:
 
   - **Alice (Customer):** Represented as a rectangle, Alice is the primary external entity interacting with the Merry Berry system. She initiates requests (e.g., Menu Item Request, Customization Selections, Place Order Request, Order Tracking Request, Auth Request, Submit Review, View Reviews Request) and receives responses (e.g., Display Menu Items, Cart Update Confirmation, Order Confirmation, Order Status Updates, Auth Token [JWT], Review Submission Confirmation, Display Product Reviews).
-  - **Payment Gateway (Stripe):** Represented as a rectangle, the Payment Gateway is an external system responsible for processing payments.  Our system sends Payment Information to the Payment Gateway and receives Payment Data (Payment Status) in response.
+  - **Payment Gateway (Stripe):** Represented as a rectangle, the Payment Gateway is an external system responsible for processing payments. Our system sends Payment Information to the Payment Gateway and receives Payment Data (Payment Status) in response.
 
 - **Processes (Data Transformations):** Represented as circles, these are the actions or transformations performed by the system on the data. Our DFD includes the following key processes:
 
-  - **Browse Menu Items:**  This process handles the "Menu Item Request" from Alice. It retrieves menu data from the MongoDB data store and provides (Display Menu Items) back to Alice.
-  - **Customize Order:**  This process receives "Customization Selections" from Alice and uses this input to manage order customization details. It provides (Customized Item Options) back to Alice.
+  - **Browse Menu Items:** This process handles the "Menu Item Request" from Alice. It retrieves menu data from the MongoDB data store and provides (Display Menu Items) back to Alice.
+  - **Customize Order:** This process receives "Customization Selections" from Alice and uses this input to manage order customization details. It provides (Customized Item Options) back to Alice.
   - **Add to Cart:** This process handles the "Add Item to Cart Request" from Alice, updating the cart items. It sends (Cart Update Confirmation) back to Alice.
   - **View Cart:** This process handles the "View Cart Request" from Alice, retrieving cart details. It provides (Cart Items & Summary) back to Alice.
   - **Place Order:** This process handles the "Place Order Request" from Alice. It receives "Payment Information" and "Promo Code" data, interacts with the "Validate Promo Code" and "Process Payment" processes, and stores order details in the MongoDB data store. It sends (Order Confirmation) back to Alice.
@@ -420,7 +417,7 @@ Our Dataflow Diagram explicitly identifies and depicts the following key compone
 
   - **MongoDB Database:** This data store holds various collections including Menu Data, Order Details, Promo Codes, User Credentials, and User Reviews & Ratings. It serves as the central repository for the application's persistent data.
 
-- **Data Flows (Data in Motion):** Represented as arrows, these indicate the movement of data between external entities, processes, and data stores.  The arrows are labeled to clearly indicate the data being transferred.  Examples include:
+- **Data Flows (Data in Motion):** Represented as arrows, these indicate the movement of data between external entities, processes, and data stores. The arrows are labeled to clearly indicate the data being transferred. Examples include:
 
   - `Menu Item Request` (from Alice to "Browse Menu Items")
   - `Display Menu Items` (from "Browse Menu Items" to Alice)
@@ -447,85 +444,84 @@ To further illustrate the data flow within the Merry Berry system, particularly 
 
 ##### **Key Components of the Admin Functionality Dataflow Diagram:**
 
-*   **External Entities (Sources and Destinations of Data for Admin Functions):**
+- **External Entities (Sources and Destinations of Data for Admin Functions):**
 
-    *   **ADMIN:** Represented as a green rectangle, the ADMIN entity represents the shop administrator or staff member responsible for managing the system's backend functionalities, specifically menu items and order overview. The ADMIN initiates actions related to menu management and order monitoring.
+  - **ADMIN:** Represented as a green rectangle, the ADMIN entity represents the shop administrator or staff member responsible for managing the system's backend functionalities, specifically menu items and order overview. The ADMIN initiates actions related to menu management and order monitoring.
 
-*   **Processes (Data Transformations for Admin Functions):** Represented as purple circles, these processes detail the administrative actions and data transformations within the system:
+- **Processes (Data Transformations for Admin Functions):** Represented as purple circles, these processes detail the administrative actions and data transformations within the system:
 
-    *   **Verify User credential (JWT):** This process handles the authentication of the ADMIN user, verifying their credentials (JWT - JSON Web Token) to ensure they have the necessary administrative privileges to access protected functionalities.  It receives "Admin Credentials for Verification" and provides "Admin Authentication Success / Failure" feedback.
-    *   **Verify admin role/permission:**  Subsequent to successful authentication, this process validates the ADMIN user's role and permissions to ensure they are authorized to perform specific administrative actions (like menu updates or order management). It receives "Validating authorization" requests and grants or denies access accordingly ("If granted, have access to").
-    *   **Display Order Details:** This process handles requests from the DASHBOARD UI to display detailed order information to the ADMIN. It receives "Request order summary" and provides "(Detailed Order Data)" to be displayed on the dashboard.
-    *   **Display Menu Items:** This process handles requests to display the menu item list for administrative review and management. It receives "GET Request Menu Item List" and provides "(Menu Item Data)" for display in the DASHBOARD UI.
-    *   **Update order status:** This process allows the ADMIN to manually update the status of an order. It receives "Initiate Order Management Action" and "Retrieve current order status" to facilitate order status updates.
-    *   **Fetch order status:** This process is responsible for retrieving the current status of orders, likely for display in the DASHBOARD UI or for order management purposes.
-    *   **Create Menu Item:** This process handles the creation of new menu items in the system. It receives "POST Request /menu-items" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to persist the new menu item.
-    *   **Update Existing Menu Item:** This process handles modifications to existing menu items. It receives "PATCH/PUT Request /menu-items/{id}" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to update the specified menu item.
-    *   **Delete Menu Item:** This process handles the removal of menu items from the system. It receives "DELETE Request /menu-items/{id}" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to delete the specified menu item.
+  - **Verify User credential (JWT):** This process handles the authentication of the ADMIN user, verifying their credentials (JWT - JSON Web Token) to ensure they have the necessary administrative privileges to access protected functionalities. It receives "Admin Credentials for Verification" and provides "Admin Authentication Success / Failure" feedback.
+  - **Verify admin role/permission:** Subsequent to successful authentication, this process validates the ADMIN user's role and permissions to ensure they are authorized to perform specific administrative actions (like menu updates or order management). It receives "Validating authorization" requests and grants or denies access accordingly ("If granted, have access to").
+  - **Display Order Details:** This process handles requests from the DASHBOARD UI to display detailed order information to the ADMIN. It receives "Request order summary" and provides "(Detailed Order Data)" to be displayed on the dashboard.
+  - **Display Menu Items:** This process handles requests to display the menu item list for administrative review and management. It receives "GET Request Menu Item List" and provides "(Menu Item Data)" for display in the DASHBOARD UI.
+  - **Update order status:** This process allows the ADMIN to manually update the status of an order. It receives "Initiate Order Management Action" and "Retrieve current order status" to facilitate order status updates.
+  - **Fetch order status:** This process is responsible for retrieving the current status of orders, likely for display in the DASHBOARD UI or for order management purposes.
+  - **Create Menu Item:** This process handles the creation of new menu items in the system. It receives "POST Request /menu-items" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to persist the new menu item.
+  - **Update Existing Menu Item:** This process handles modifications to existing menu items. It receives "PATCH/PUT Request /menu-items/{id}" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to update the specified menu item.
+  - **Delete Menu Item:** This process handles the removal of menu items from the system. It receives "DELETE Request /menu-items/{id}" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to delete the specified menu item.
 
-*   **Data Stores (Data at Rest for Admin Functions):**
+- **Data Stores (Data at Rest for Admin Functions):**
 
-    *   **MongoDB:**  The MongoDB data store, represented as a blue rectangle, persists data related to menu items and orders, which are managed and accessed through the administrative functionalities depicted in this DFD.
+  - **MongoDB:** The MongoDB data store, represented as a blue rectangle, persists data related to menu items and orders, which are managed and accessed through the administrative functionalities depicted in this DFD.
 
-*   **User Interface (Admin-Specific UI):** Represented as an orange rectangle:
+- **User Interface (Admin-Specific UI):** Represented as an orange rectangle:
 
-    *   **DASHBOARD UI:** This represents the administrative user interface, likely a web-based dashboard, used by the ADMIN to interact with the system, view order summaries, manage menu items, and initiate administrative actions. It sends requests such as "Request order summary," "GET Request Menu Item List," and "Initial Menu Update Action" and receives data to display.
+  - **DASHBOARD UI:** This represents the administrative user interface, likely a web-based dashboard, used by the ADMIN to interact with the system, view order summaries, manage menu items, and initiate administrative actions. It sends requests such as "Request order summary," "GET Request Menu Item List," and "Initial Menu Update Action" and receives data to display.
 
-*   **Data Flows (Data in Motion for Admin Functions):**
+- **Data Flows (Data in Motion for Admin Functions):**
 
-    *   `Admin Credentials for Verification` (from ADMIN to "Verify User credential (JWT)")
-    *   `Admin Authentication Success / Failure` (from "Verify User credential (JWT)" to Backend API Server)
-    *   `Validating authorization` (from Backend API Server to "Verify admin role/permission")
-    *   `If granted, have access to` (from "Verify admin role/permission" to DASHBOARD UI)
-    *   `Request order summary` (from DASHBOARD UI to "Display Order Details")
-    *   `(Detailed Order Data)` (from "Display Order Details" to DASHBOARD UI)
-    *   `GET Request Menu Item List` (from DASHBOARD UI to "Display Menu Items")
-    *   `(Menu Item Data)` (from "Display Menu Items" to DASHBOARD UI)
-    *   `Initiate Order Management Action` (from DASHBOARD UI to "Update order status")
-    *   `Retrieve current order status` (from "Update order status" to "Fetch order status")
-    *   `POST Request /menu-items` (from DASHBOARD UI to "Create Menu Item")
-    *   `PATCH/PUT Request /menu-items/{id}` (from DASHBOARD UI to "Update Existing Menu Item")
-    *   `DELETE Request /menu-items/{id}` (from DASHBOARD UI to "Delete Menu Item")
-    *   Data flows between "Create Menu Item", "Update Existing Menu Item", "Delete Menu Item", "Display Menu Items", "Fetch order status" and `MongoDB` (implicitly representing data storage and retrieval operations, though specific labels are less detailed in this Admin DFD for conciseness).
+  - `Admin Credentials for Verification` (from ADMIN to "Verify User credential (JWT)")
+  - `Admin Authentication Success / Failure` (from "Verify User credential (JWT)" to Backend API Server)
+  - `Validating authorization` (from Backend API Server to "Verify admin role/permission")
+  - `If granted, have access to` (from "Verify admin role/permission" to DASHBOARD UI)
+  - `Request order summary` (from DASHBOARD UI to "Display Order Details")
+  - `(Detailed Order Data)` (from "Display Order Details" to DASHBOARD UI)
+  - `GET Request Menu Item List` (from DASHBOARD UI to "Display Menu Items")
+  - `(Menu Item Data)` (from "Display Menu Items" to DASHBOARD UI)
+  - `Initiate Order Management Action` (from DASHBOARD UI to "Update order status")
+  - `Retrieve current order status` (from "Update order status" to "Fetch order status")
+  - `POST Request /menu-items` (from DASHBOARD UI to "Create Menu Item")
+  - `PATCH/PUT Request /menu-items/{id}` (from DASHBOARD UI to "Update Existing Menu Item")
+  - `DELETE Request /menu-items/{id}` (from DASHBOARD UI to "Delete Menu Item")
+  - Data flows between "Create Menu Item", "Update Existing Menu Item", "Delete Menu Item", "Display Menu Items", "Fetch order status" and `MongoDB` (implicitly representing data storage and retrieval operations, though specific labels are less detailed in this Admin DFD for conciseness).
 
-
-![Dataflow Diagram](./docs/diagrams/dataflow_diagram.png)
-![Admin Dataflow Diagram](./docs/diagrams/admin_dataflow_diagram.png)
+<img src="./docs/diagrams/dataflow_diagram.png" alt="Dataflow Diagram" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
+<img src="./docs/diagrams/admin_dataflow_diagram.png" alt="Admin Dataflow Diagram" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 ---
 
 ## 🏗️ Application Architecture Diagram: Layered Structure for Scalability and Maintainability
 
-To illustrate the high-level structure and architectural design of the Merry Berry Smoothie & Açaí Shop application, we have created an Application Architecture Diagram (AAD). This diagram visually represents the layered architecture of our system, demonstrating a clear separation of concerns and our strategic approach to building a scalable, maintainable, and robust application.  The AAD provides an "almost flawless" understanding of the application's structural organization and component interactions.
+To illustrate the high-level structure and architectural design of the Merry Berry Smoothie & Açaí Shop application, we have created an Application Architecture Diagram (AAD). This diagram visually represents the layered architecture of our system, demonstrating a clear separation of concerns and our strategic approach to building a scalable, maintainable, and robust application. The AAD provides an "almost flawless" understanding of the application's structural organization and component interactions.
 
 ### 📂 Layers of the Application Architecture
 
 Our Application Architecture Diagram clearly depicts the following distinct layers, reflecting a standard layered architectural pattern:
 
-- **Presentation Layer:**  This layer is responsible for handling user interactions and presenting the user interface.  As shown in the AAD, the **React.js Frontend** constitutes our Presentation Layer. It encompasses all React components, UI elements, and client-side logic responsible for rendering the user interface and handling user input.
-- **Business Logic Layer (Application Layer):** This layer encapsulates the core application logic, business rules, and processing.  In our architecture, the **Node.js & Express Backend** forms the Business Logic Layer.  This layer houses our API endpoints, server-side logic for order processing, authentication, data validation, and interaction with the Data Access Layer. Key components within this layer include:
+- **Presentation Layer:** This layer is responsible for handling user interactions and presenting the user interface. As shown in the AAD, the **React.js Frontend** constitutes our Presentation Layer. It encompasses all React components, UI elements, and client-side logic responsible for rendering the user interface and handling user input.
+- **Business Logic Layer (Application Layer):** This layer encapsulates the core application logic, business rules, and processing. In our architecture, the **Node.js & Express Backend** forms the Business Logic Layer. This layer houses our API endpoints, server-side logic for order processing, authentication, data validation, and interaction with the Data Access Layer. Key components within this layer include:
   - API Controllers (handling routes and requests)
   - Services (encapsulating business logic for specific features like order management, menu management, user authentication)
   - potentially Middleware (for authentication, request logging, etc.)
-- **Data Access Layer:** This layer is responsible for managing data persistence and interaction with the database.  The **MongoDB Database** and **Mongoose ORM** together constitute our Data Access Layer.  Mongoose acts as an Object-Document Mapper, facilitating interaction with the MongoDB database. This layer handles database queries, data retrieval, and data storage operations.
+- **Data Access Layer:** This layer is responsible for managing data persistence and interaction with the database. The **MongoDB Database** and **Mongoose ORM** together constitute our Data Access Layer. Mongoose acts as an Object-Document Mapper, facilitating interaction with the MongoDB database. This layer handles database queries, data retrieval, and data storage operations.
 
-The Application Architecture Diagram visually connects these layers and indicates the flow of requests and data between them.  It demonstrates how the Presentation Layer (Frontend) interacts with the Business Logic Layer (Backend API), which in turn interacts with the Data Access Layer (MongoDB).
+The Application Architecture Diagram visually connects these layers and indicates the flow of requests and data between them. It demonstrates how the Presentation Layer (Frontend) interacts with the Business Logic Layer (Backend API), which in turn interacts with the Data Access Layer (MongoDB).
 
-![Application Architecture Diagram](./docs/diagrams/application_architecture_diagram.png)
+<img src="./docs/diagrams/application_architecture_diagram.png" alt="Application Architecture Diagram" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 ## User Stories: Persona-Driven Feature Development & Refinement
 
-Our user stories are meticulously crafted to be persona-driven, ensuring that the Merry Berry Smoothie & Açaí Shop application is designed with the end-user firmly in mind.  We have employed the ‘persona, what and why’ format for each user story to clearly articulate user needs and the rationale behind each feature.  Furthermore, we have actively incorporated a process of revision and refinement based on simulated user feedback and usability considerations, demonstrating an iterative approach to feature definition.
+Our user stories are meticulously crafted to be persona-driven, ensuring that the Merry Berry Smoothie & Açaí Shop application is designed with the end-user firmly in mind. We have employed the ‘persona, what and why’ format for each user story to clearly articulate user needs and the rationale behind each feature. Furthermore, we have actively incorporated a process of revision and refinement based on simulated user feedback and usability considerations, demonstrating an iterative approach to feature definition.
 
 ## Persona 1: Emily - The Fitness-Focused Health Seeker
 
-**Persona Description:** Emily, 28, is a dedicated fitness enthusiast living a busy, health-conscious lifestyle in the city.  She works as a marketing professional and prioritizes regular exercise and nutritious eating to maintain her energy levels and well-being. Emily is training for a half-marathon and is very conscious of her macronutrient intake, particularly post-workout protein and natural sugars. After intense gym sessions, she seeks quick, healthy, and customizable meal options that align with her fitness goals.  She values efficiency and appreciates technology that simplifies her healthy lifestyle choices.
+**Persona Description:** Emily, 28, is a dedicated fitness enthusiast living a busy, health-conscious lifestyle in the city. She works as a marketing professional and prioritizes regular exercise and nutritious eating to maintain her energy levels and well-being. Emily is training for a half-marathon and is very conscious of her macronutrient intake, particularly post-workout protein and natural sugars. After intense gym sessions, she seeks quick, healthy, and customizable meal options that align with her fitness goals. She values efficiency and appreciates technology that simplifies her healthy lifestyle choices.
 
 ### User Story 1: Browse Menu with Dietary Filters and Visual Appeal
 
 - **What:** As Emily, a **Fitness-Focused Health Seeker**, I want to easily browse the menu with distinct categories (smoothies, açaí bowls, toppings), dietary filters (vegan, gluten-free, high-protein, low-sugar), and high-quality images for each item.
 
-- **Why:** So that **I can swiftly discover healthy and appealing options that perfectly fit my dietary needs and training regime, allowing me to make informed and efficient choices after my workouts without spending unnecessary time searching.  Crucially, after an intense workout, my energy and focus are limited. A visually rich and well-organized menu acts as a mental shortcut, *reducing decision fatigue and enabling me to quickly identify and select nutritious choices that align with my fitness identity and goals.* I need to ensure the food I order supports my fitness goals and dietary preferences, and a visually rich, well-organized menu will help me do this quickly and effortlessly, minimizing any barriers to healthy eating after exercise.**
+- **Why:** So that **I can swiftly discover healthy and appealing options that perfectly fit my dietary needs and training regime, allowing me to make informed and efficient choices after my workouts without spending unnecessary time searching. Crucially, after an intense workout, my energy and focus are limited. A visually rich and well-organized menu acts as a mental shortcut, _reducing decision fatigue and enabling me to quickly identify and select nutritious choices that align with my fitness identity and goals._ I need to ensure the food I order supports my fitness goals and dietary preferences, and a visually rich, well-organized menu will help me do this quickly and effortlessly, minimizing any barriers to healthy eating after exercise.**
 
 #### Revision History
 
@@ -534,33 +530,33 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 > - **What:** As a health-conscious user, I want to browse the menu easily.
 > - **Why:** So I can find healthy options.
 
-**After (Revised User Story - Detailed & Persona-Focused):** *(Current User Story as above)*
+**After (Revised User Story - Detailed & Persona-Focused):** _(Current User Story as above)_
 
-**Revision Rationale:** Initial feedback indicated the user story was too generic and lacked specific details crucial for Emily's persona.  Users pointed out that for a fitness-focused individual like Emily, *speed and ease of navigation are paramount post-workout due to potential fatigue*.  The revised user story incorporates specific dietary filters and emphasizes visual appeal and clear categorization to directly address Emily's need for efficient and effortless healthy food discovery after exercise.  The 'Why' section is significantly strengthened to highlight the *psychological benefit of reduced decision fatigue* and alignment with her fitness identity, making the feature more impactful and user-centric.
+**Revision Rationale:** Initial feedback indicated the user story was too generic and lacked specific details crucial for Emily's persona. Users pointed out that for a fitness-focused individual like Emily, _speed and ease of navigation are paramount post-workout due to potential fatigue_. The revised user story incorporates specific dietary filters and emphasizes visual appeal and clear categorization to directly address Emily's need for efficient and effortless healthy food discovery after exercise. The 'Why' section is significantly strengthened to highlight the _psychological benefit of reduced decision fatigue_ and alignment with her fitness identity, making the feature more impactful and user-centric.
 
 ### User Story 2: Customize Orders for Personalized Nutrition
 
 - **What:** As Emily, a **Fitness-Focused Health Seeker**, I want to precisely customize my açaí bowl or smoothie to suit my specific nutritional requirements by easily adding or removing ingredients (like almond milk, various protein powders, specific fruits, seed types, etc.) and specifying portion sizes.
 
-- **Why:** To ensure that **my purchase not only tastes fantastic but also perfectly aligns with my post-workout nutritional goals, allowing me to fine-tune the macronutrient profile (protein, carbohydrate, healthy fat content) to optimally support my training and recovery.**  Precise customization empowers me to take direct control of my nutrition. *For my half-marathon training, precise macronutrient ratios are critical for optimal performance and recovery. The ability to customize ensures that every smoothie or bowl becomes a targeted nutritional tool, maximizing the health benefits and directly contributing to my fitness progress. This level of personalization moves beyond mere convenience; it's about actively supporting my athletic goals through informed dietary choices.*
+- **Why:** To ensure that **my purchase not only tastes fantastic but also perfectly aligns with my post-workout nutritional goals, allowing me to fine-tune the macronutrient profile (protein, carbohydrate, healthy fat content) to optimally support my training and recovery.** Precise customization empowers me to take direct control of my nutrition. _For my half-marathon training, precise macronutrient ratios are critical for optimal performance and recovery. The ability to customize ensures that every smoothie or bowl becomes a targeted nutritional tool, maximizing the health benefits and directly contributing to my fitness progress. This level of personalization moves beyond mere convenience; it's about actively supporting my athletic goals through informed dietary choices._
 
-- **Revision:** Based on user input and Emily's persona needs, the customization feature was significantly expanded to enable a wider range of dietary preferences and nutritional adjustments.  Beyond the original three basic selections, we incorporated options for keto-friendly, low-sugar, and high-protein customizations, reflecting the diverse dietary needs of health-conscious users like Emily.  We also improved the UI for customization to be more intuitive and visually clear, making it easier for users to see the impact of their choices on the nutritional content of their order.
+- **Revision:** Based on user input and Emily's persona needs, the customization feature was significantly expanded to enable a wider range of dietary preferences and nutritional adjustments. Beyond the original three basic selections, we incorporated options for keto-friendly, low-sugar, and high-protein customizations, reflecting the diverse dietary needs of health-conscious users like Emily. We also improved the UI for customization to be more intuitive and visually clear, making it easier for users to see the impact of their choices on the nutritional content of their order.
 
 ### User Story 3: Track Order Status in Real-Time for Time Management
 
 - **What:** As Emily, a **Fitness-Focused Health Seeker**, I want to be able to track my order status in real-time, with clear updates on each stage (e.g., "Preparing," "Blending," "Ready for Pickup"), displayed with a progress bar and timely notifications.
 
-- **Why:** To effectively plan my time after my workout and gym sessions, **allowing me to precisely time my arrival for pickup or anticipate delivery, avoid unnecessary waiting at the shop, and seamlessly integrate my healthy meal into my busy schedule without disrupting my workout routine or other commitments.**  Knowing the exact order status gives me control and reduces stress in my time-constrained day. *Time is a precious commodity, especially when balancing work, training, and personal life. Real-time order tracking is not just about convenience; it's about respecting my schedule and minimizing disruptions to my carefully planned day. By knowing exactly when my order will be ready, I can optimize my post-workout routine, ensuring I get my nutritious meal without unnecessary delays and can quickly move on to my next commitment.*
+- **Why:** To effectively plan my time after my workout and gym sessions, **allowing me to precisely time my arrival for pickup or anticipate delivery, avoid unnecessary waiting at the shop, and seamlessly integrate my healthy meal into my busy schedule without disrupting my workout routine or other commitments.** Knowing the exact order status gives me control and reduces stress in my time-constrained day. _Time is a precious commodity, especially when balancing work, training, and personal life. Real-time order tracking is not just about convenience; it's about respecting my schedule and minimizing disruptions to my carefully planned day. By knowing exactly when my order will be ready, I can optimize my post-workout routine, ensuring I get my nutritious meal without unnecessary delays and can quickly move on to my next commitment._
 
 ## Persona 2: John - The Busy Professional Seeking Quick & Healthy Lunch
 
-**Persona Description:** John, 35, is a busy marketing manager working long hours in a demanding corporate environment.  He values convenience and efficiency, especially during his limited lunch breaks. John is increasingly health-conscious and wants to make better food choices but often struggles to find healthy options that are also quick and easy to access near his office. He appreciates streamlined digital experiences and relies heavily on mobile ordering for lunch.
+**Persona Description:** John, 35, is a busy marketing manager working long hours in a demanding corporate environment. He values convenience and efficiency, especially during his limited lunch breaks. John is increasingly health-conscious and wants to make better food choices but often struggles to find healthy options that are also quick and easy to access near his office. He appreciates streamlined digital experiences and relies heavily on mobile ordering for lunch.
 
 ### User Story 4: Quick Reorder of Favorite Items for Lunchtime Efficiency
 
 - **What:** As John, a **Busy Professional Seeking Quick & Healthy Lunch**, I would like to be able to quickly reorder my favorite smoothie or açaí bowl combinations from my past order history with just a single click or tap, directly from the homepage or order history section.
 
-- **Why:** To drastically save time during my short lunch breaks and ensure that **I can consistently get my preferred healthy and satisfying meal as quickly and effortlessly as possible, maximizing my limited break time for relaxation and recharging before returning to work.**  Reordering saves me from having to browse and customize my order each time, which is crucial when time is of the essence. *Lunch breaks are a critical, but often too short, window in my hectic workday.  Every second saved during ordering translates to more precious moments to de-stress, recharge, and actually enjoy my healthy lunch. A one-click reorder feature is not just about convenience; it's about reclaiming valuable personal time and making my lunch break a true break, rather than a rushed and stressful transaction.*
+- **Why:** To drastically save time during my short lunch breaks and ensure that **I can consistently get my preferred healthy and satisfying meal as quickly and effortlessly as possible, maximizing my limited break time for relaxation and recharging before returning to work.** Reordering saves me from having to browse and customize my order each time, which is crucial when time is of the essence. _Lunch breaks are a critical, but often too short, window in my hectic workday. Every second saved during ordering translates to more precious moments to de-stress, recharge, and actually enjoy my healthy lunch. A one-click reorder feature is not just about convenience; it's about reclaiming valuable personal time and making my lunch break a true break, rather than a rushed and stressful transaction._
 
 #### Revision History
 
@@ -569,9 +565,9 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 > - **What:** As a busy professional, I want to reorder quickly.
 > - **Why:** To save time during lunch.
 
-**After (Revised User Story - Stronger 'Why' & Homepage Focus):** *(Current User Story as above)*
+**After (Revised User Story - Stronger 'Why' & Homepage Focus):** _(Current User Story as above)_
 
-**Revision Rationale:** Initial feedback suggested that while the user story addressed John's need for speed, the 'Why' section could be more impactful and emotionally resonant.  Users emphasized that for busy professionals, lunch breaks are not just about sustenance but also about *mental respite and stress reduction*.  The revised user story strengthens the 'Why' to highlight the *value of reclaimed personal time during lunch breaks* and the feature's role in making lunch a true break for John.  Furthermore, based on usability considerations for frequent reordering, the revised user story explicitly requests the reorder functionality to be accessible directly from the *homepage*, making it even more efficient and prominent for users like John who prioritize speed and ease of access.
+**Revision Rationale:** Initial feedback suggested that while the user story addressed John's need for speed, the 'Why' section could be more impactful and emotionally resonant. Users emphasized that for busy professionals, lunch breaks are not just about sustenance but also about _mental respite and stress reduction_. The revised user story strengthens the 'Why' to highlight the _value of reclaimed personal time during lunch breaks_ and the feature's role in making lunch a true break for John. Furthermore, based on usability considerations for frequent reordering, the revised user story explicitly requests the reorder functionality to be accessible directly from the _homepage_, making it even more efficient and prominent for users like John who prioritize speed and ease of access.
 
 ### Persona 3: Maria - The Shop Owner Optimizing Operations
 
@@ -579,9 +575,9 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 
 ### User Story 5: Real-Time Order Management Dashboard for Operational Efficiency
 
-- **What:** As Maria, the **Shop Owner Optimizing Operations**, I need a comprehensive and real-time dashboard that allows me to efficiently view and manage all incoming online orders, track their status, and prioritize them effectively.  The dashboard should display key order details, customer notes, and order history.
+- **What:** As Maria, the **Shop Owner Optimizing Operations**, I need a comprehensive and real-time dashboard that allows me to efficiently view and manage all incoming online orders, track their status, and prioritize them effectively. The dashboard should display key order details, customer notes, and order history.
 
-- **Why:** To effectively prioritize and fulfill incoming orders in a timely manner, **enabling me to optimize my shop's operations, minimize customer wait times, reduce order errors, and ultimately increase customer satisfaction and repeat business.  Real-time order visibility is crucial for efficient workflow management within my shop and ensuring smooth service during peak hours.** *My shop's success hinges on operational efficiency and customer happiness.  A real-time dashboard is not just a tool for managing orders; it's the central nervous system of my online business. It empowers me to proactively manage workflow, anticipate bottlenecks during peak hours, and ensure every customer receives prompt and accurate service. This level of operational control directly translates to improved customer loyalty and a thriving business.*
+- **Why:** To effectively prioritize and fulfill incoming orders in a timely manner, **enabling me to optimize my shop's operations, minimize customer wait times, reduce order errors, and ultimately increase customer satisfaction and repeat business. Real-time order visibility is crucial for efficient workflow management within my shop and ensuring smooth service during peak hours.** _My shop's success hinges on operational efficiency and customer happiness. A real-time dashboard is not just a tool for managing orders; it's the central nervous system of my online business. It empowers me to proactively manage workflow, anticipate bottlenecks during peak hours, and ensure every customer receives prompt and accurate service. This level of operational control directly translates to improved customer loyalty and a thriving business._
 
 ### Persona 4: Sarah - The First-Time App User Seeking Easy Onboarding
 
@@ -591,31 +587,31 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 
 - **What:** As Sarah, a **First-Time App User Seeking Easy Onboarding**, I would need a brief, interactive tutorial that guides me through the key features of the app as soon as I launch it for the first time, showing me how to browse the menu, customize orders, and place my first order smoothly.
 
-- **Why:** To quickly feel comfortable and confident using the app without needing to search for help or figure things out on my own, **ensuring a positive first impression and encouraging me to explore the app's features and place my first order without frustration.  A good onboarding experience is essential for me to adopt a new app and become a regular user.** *In today's app-saturated market, first impressions are everything.  A seamless onboarding experience is not just about teaching me how to use the app; it's about making me feel welcome and valued as a new user. If the initial experience is confusing or frustrating, I'm likely to abandon the app and move on.  An interactive tutorial demonstrates a commitment to user-friendliness and significantly increases the likelihood of me becoming a loyal Merry Berry customer.*
+- **Why:** To quickly feel comfortable and confident using the app without needing to search for help or figure things out on my own, **ensuring a positive first impression and encouraging me to explore the app's features and place my first order without frustration. A good onboarding experience is essential for me to adopt a new app and become a regular user.** _In today's app-saturated market, first impressions are everything. A seamless onboarding experience is not just about teaching me how to use the app; it's about making me feel welcome and valued as a new user. If the initial experience is confusing or frustrating, I'm likely to abandon the app and move on. An interactive tutorial demonstrates a commitment to user-friendliness and significantly increases the likelihood of me becoming a loyal Merry Berry customer._
 
-### User Story 7:  Visible Discounts and Promotions to Incentivize First Order
+### User Story 7: Visible Discounts and Promotions to Incentivize First Order
 
 - **What:** As Sarah, a **First-Time App User Seeking Easy Onboarding**, I would want to easily see any available promotions and discounts specifically for first-time users, displayed prominently when I first open the app or browse the menu.
 
-- **Why:** To save money on my first order and feel like I'm getting good value as a new user, **incentivizing me to place my first order and explore the app's offerings.  As a budget-conscious student, discounts and promotions are a significant factor in my purchasing decisions, and clear visibility of these offers will encourage me to try Merry Berry.** *As a student, every dollar counts.  Seeing a clear discount for first-time users is not just about saving money; it's a signal that Merry Berry values new customers and understands budget constraints.  Prominent visibility of promotions makes me feel like I'm getting a good deal and significantly increases my motivation to try out the app and place my first order. It's a key factor in converting my initial interest into a concrete action.*
+- **Why:** To save money on my first order and feel like I'm getting good value as a new user, **incentivizing me to place my first order and explore the app's offerings. As a budget-conscious student, discounts and promotions are a significant factor in my purchasing decisions, and clear visibility of these offers will encourage me to try Merry Berry.** _As a student, every dollar counts. Seeing a clear discount for first-time users is not just about saving money; it's a signal that Merry Berry values new customers and understands budget constraints. Prominent visibility of promotions makes me feel like I'm getting a good deal and significantly increases my motivation to try out the app and place my first order. It's a key factor in converting my initial interest into a concrete action._
 
 ---
 
-**Feature Coverage and Completeness:** We have conducted a comprehensive review of our user stories to ensure they cover all key functionalities of the Merry Berry Smoothie & Açaí Shop application as outlined in the project objectives and features section.  The user stories address core user workflows, including menu browsing, order customization, cart management, order placement, order tracking, secure payment, promo code application, and user reviews.  Furthermore, they also consider essential aspects like user authentication, responsive design, and operational needs of the shop owner.  We are confident that these user stories provide a robust foundation for the development of a user-centered and feature-rich application.
+**Feature Coverage and Completeness:** We have conducted a comprehensive review of our user stories to ensure they cover all key functionalities of the Merry Berry Smoothie & Açaí Shop application as outlined in the project objectives and features section. The user stories address core user workflows, including menu browsing, order customization, cart management, order placement, order tracking, secure payment, promo code application, and user reviews. Furthermore, they also consider essential aspects like user authentication, responsive design, and operational needs of the shop owner. We are confident that these user stories provide a robust foundation for the development of a user-centered and feature-rich application.
 
 ## 📐 Wireframes
 
-To ensure an exceptionally planned and user-centered design for the Merry Berry Smoothie & Açaí Shop application, we have meticulously developed a set of medium-fidelity wireframes. These wireframes are not merely basic sketches; they represent a strategic approach to UI/UX design, demonstrating a deep understanding of user needs, project goals, and the importance of a seamless experience across various devices.  Our wireframing process has been crucial in defining the project's flow, structure, and ensuring optimal usability before moving into higher-fidelity mockups and development.
+To ensure an exceptionally planned and user-centered design for the Merry Berry Smoothie & Açaí Shop application, we have meticulously developed a set of medium-fidelity wireframes. These wireframes are not merely basic sketches; they represent a strategic approach to UI/UX design, demonstrating a deep understanding of user needs, project goals, and the importance of a seamless experience across various devices. Our wireframing process has been crucial in defining the project's flow, structure, and ensuring optimal usability before moving into higher-fidelity mockups and development.
 
 ### Desktop Wireframes
 
 #### Home
 
-![Home Page](./docs/wireframes/desktop/home.png)
+<img src="./docs/wireframes/desktop/home.png" alt="Home Page" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 #### Menu
 
-![Menu Page](./docs/wireframes/desktop/menu.png)
+<img src="./docs/wireframes/desktop/menu.png" alt="Menu Page" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 [Click Here for Desktop Wireframes](./docs/wireframes/desktop/)
 
@@ -623,11 +619,11 @@ To ensure an exceptionally planned and user-centered design for the Merry Berry 
 
 #### Home
 
-![Home Page](./docs/wireframes/mobile/home.png)
+<img src="./docs/wireframes/mobile/home.png" alt="Home Page" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 #### Menu
 
-![Menu Page](./docs/wireframes/mobile/menu.png)
+<img src="./docs/wireframes/mobile/menu.png" alt="Menu Page" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 [Click Here for Mobile Wireframes](./docs/wireframes/mobile/)
 
@@ -635,11 +631,11 @@ To ensure an exceptionally planned and user-centered design for the Merry Berry 
 
 #### Home
 
-![Home Page](./docs/wireframes/tablet/home.png)
+<img src="./docs/wireframes/tablet/home.png" alt="Home Page" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 #### Menu
 
-![Menu Page](./docs/wireframes/tablet/menu.png)
+<img src="./docs/wireframes/tablet/menu.png" alt="Menu Page" style="max-height:400px; display:block; margin-left:auto; margin-right:auto;" />
 
 [Click Here for Tablet Wireframes](./docs/wireframes/tablet/)
 
@@ -676,9 +672,9 @@ The Git Flow workflow is used to manage source code, branching, and releases. He
 
 ## 📌 GitHub Projects Board: Kanban for Agile Project Management & Sprint Planning
 
-To ensure efficient project tracking and agile preparation for Part B, we utilize a Kanban-style GitHub Projects board, central to visualizing workflow and managing tasks throughout the Merry Berry project.  We consistently adhere to **simple and clear Kanban standards**, evidenced in the dated screenshots below, which also illustrate our sprint planning for Part B development.
+To ensure efficient project tracking and agile preparation for Part B, we utilize a Kanban-style GitHub Projects board, central to visualizing workflow and managing tasks throughout the Merry Berry project. We consistently adhere to **simple and clear Kanban standards**, evidenced in the dated screenshots below, which also illustrate our sprint planning for Part B development.
 
-### Screenshots (Throughout Part A Documentation):**
+### Screenshots (Throughout Part A Documentation):\*\*
 
 #### Early Stage (Feb 9th)
 
@@ -689,11 +685,12 @@ To ensure efficient project tracking and agile preparation for Part B, we utiliz
 ![Mid Stage](./docs/kanban/kanban_board_mid_stage.png)
 
 #### Late Stage (Feb 13th)
+
 ![Late Stage 1](./docs/kanban/kanban_board_late_stage_1.png)
 
 #### Late Stage (Feb 15th)
-![Late Stage 2](./docs/kanban/kanban_board_late_stage_2.png)
 
+![Late Stage 2](./docs/kanban/kanban_board_late_stage_2.png)
 
 These screenshots, alongside the following standards, demonstrate our organized Kanban approach and Part B sprint planning.
 
@@ -701,11 +698,11 @@ These screenshots, alongside the following standards, demonstrate our organized 
 
 Our GitHub Projects board adheres to these key standards:
 
-#### ✔️ Consistent Card Naming:  `[Feature Area] - [Concise Task Description]`
+#### ✔️ Consistent Card Naming: `[Feature Area] - [Concise Task Description]`
 
 Uniform card naming using `[Feature Area] - [Concise Task Description]` (e.g., `[README] - HD Polish & Proofread`) ensures immediate task identification and categorization, as shown in the **"Issues List View" screenshot**.
 
-#### ✔️ Meaningful Label Usage:  Categorization, Priority, Workload
+#### ✔️ Meaningful Label Usage: Categorization, Priority, Workload
 
 Diverse labels categorize tasks for clarity:
 
@@ -715,11 +712,11 @@ Diverse labels categorize tasks for clarity:
 
 **The "Issues List View" screenshot effectively showcases this varied and meaningful label application.**
 
-#### ✔️ Clear Assignee Usage:  Accountability
+#### ✔️ Clear Assignee Usage: Accountability
 
 Each task is assigned to a team member for accountability, clearly visible by avatars in **"Kanban Board Overview" screenshots** within "In progress" and "In review" columns.
 
-#### ✔️ Well-Defined Kanban Workflow:  Progress Tracking
+#### ✔️ Well-Defined Kanban Workflow: Progress Tracking
 
 Workflow columns track task status:
 
@@ -731,15 +728,15 @@ Workflow columns track task status:
 
 **"Kanban Board Overview" screenshots demonstrate tasks moving through these workflow stages throughout Part A.** Column descriptions on our live board further clarify each stage (e.g., "Ready: Requirements Clear & Capacity Available").
 
-#### ✔️ Granular Checklists:  Subtask Management
+#### ✔️ Granular Checklists: Subtask Management
 
 Checklists within Issue cards break down complex tasks into sub-steps, exemplified in the **"Example Issue Detail" screenshot**.
 
-### 🗓️ Sprint Planning for Part B:  Kanban-Informed Development Sprints
+### 🗓️ Sprint Planning for Part B: Kanban-Informed Development Sprints
 
-Extending Kanban, we planned Part B sprints around client/server milestones.  Sprints are timeboxed (e.g., 1-week), iterative, and goal-focused.  **Example: Backend Sprint 1 (Core API & Database Setup):**
+Extending Kanban, we planned Part B sprints around client/server milestones. Sprints are timeboxed (e.g., 1-week), iterative, and goal-focused. **Example: Backend Sprint 1 (Core API & Database Setup):**
 
-- **Goal:**  Establish foundational backend.
+- **Goal:** Establish foundational backend.
 - **Tasks (from Kanban Backlog):**
   - `[Backend] - Set up Backend Project & MongoDB Database` ([Team Member])
   - `[Backend] - Implement User Model & Auth API` ([Team Member])
@@ -747,9 +744,9 @@ Extending Kanban, we planned Part B sprints around client/server milestones.  Sp
 
 Sprint backlogs are created by selecting prioritized tasks from Kanban "Backlog," utilizing priority and size labels for delegation.
 
-### 🚀 Reflection:  HD Project Management - Kanban Throughout & Sprint-Ready
+### 🚀 Reflection: HD Project Management - Kanban Throughout & Sprint-Ready
 
-Our Kanban board, evidenced by dated screenshots, demonstrates consistently applied, simple and clear standards for HD project management throughout Part A and informs our sprint-based approach for Part B.  This agile methodology ensures transparency, accountability, and organized progress from documentation to development.
+Our Kanban board, evidenced by dated screenshots, demonstrates consistently applied, simple and clear standards for HD project management throughout Part A and informs our sprint-based approach for Part B. This agile methodology ensures transparency, accountability, and organized progress from documentation to development.
 
 #### Kanban Board Overview
 
