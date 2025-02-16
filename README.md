@@ -348,7 +348,56 @@ Our Dataflow Diagram explicitly identifies and depicts the following key compone
     *   `Verify User Credentials` (from "User Authentication" to MongoDB)
     *   `Retrieve Order Status` (from "Track Order Status" to MongoDB)
 
+#### **Admin Functionality Dataflow Diagram Supplement**
+
+To further illustrate the data flow within the Merry Berry system, particularly for administrative functionalities, we have developed a supplemental Dataflow Diagram specifically focused on **Admin User interactions**. This diagram details the data flow involved in menu item management and order overview from an administrative perspective.
+
+##### **Key Components of the Admin Functionality Dataflow Diagram:**
+
+*   **External Entities (Sources and Destinations of Data for Admin Functions):**
+
+    *   **ADMIN:** Represented as a green rectangle, the ADMIN entity represents the shop administrator or staff member responsible for managing the system's backend functionalities, specifically menu items and order overview. The ADMIN initiates actions related to menu management and order monitoring.
+
+*   **Processes (Data Transformations for Admin Functions):** Represented as purple circles, these processes detail the administrative actions and data transformations within the system:
+
+    *   **Verify User credential (JWT):** This process handles the authentication of the ADMIN user, verifying their credentials (JWT - JSON Web Token) to ensure they have the necessary administrative privileges to access protected functionalities.  It receives "Admin Credentials for Verification" and provides "Admin Authentication Success / Failure" feedback.
+    *   **Verify admin role/permission:**  Subsequent to successful authentication, this process validates the ADMIN user's role and permissions to ensure they are authorized to perform specific administrative actions (like menu updates or order management). It receives "Validating authorization" requests and grants or denies access accordingly ("If granted, have access to").
+    *   **Display Order Details:** This process handles requests from the DASHBOARD UI to display detailed order information to the ADMIN. It receives "Request order summary" and provides "(Detailed Order Data)" to be displayed on the dashboard.
+    *   **Display Menu Items:** This process handles requests to display the menu item list for administrative review and management. It receives "GET Request Menu Item List" and provides "(Menu Item Data)" for display in the DASHBOARD UI.
+    *   **Update order status:** This process allows the ADMIN to manually update the status of an order. It receives "Initiate Order Management Action" and "Retrieve current order status" to facilitate order status updates.
+    *   **Fetch order status:** This process is responsible for retrieving the current status of orders, likely for display in the DASHBOARD UI or for order management purposes.
+    *   **Create Menu Item:** This process handles the creation of new menu items in the system. It receives "POST Request /menu-items" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to persist the new menu item.
+    *   **Update Existing Menu Item:** This process handles modifications to existing menu items. It receives "PATCH/PUT Request /menu-items/{id}" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to update the specified menu item.
+    *   **Delete Menu Item:** This process handles the removal of menu items from the system. It receives "DELETE Request /menu-items/{id}" and "Initial Menu Update Action" from the DASHBOARD UI and interacts with the MongoDB data store to delete the specified menu item.
+
+*   **Data Stores (Data at Rest for Admin Functions):**
+
+    *   **MongoDB:**  The MongoDB data store, represented as a blue rectangle, persists data related to menu items and orders, which are managed and accessed through the administrative functionalities depicted in this DFD.
+
+*   **User Interface (Admin-Specific UI):** Represented as an orange rectangle:
+
+    *   **DASHBOARD UI:** This represents the administrative user interface, likely a web-based dashboard, used by the ADMIN to interact with the system, view order summaries, manage menu items, and initiate administrative actions. It sends requests such as "Request order summary," "GET Request Menu Item List," and "Initial Menu Update Action" and receives data to display.
+
+*   **Data Flows (Data in Motion for Admin Functions):**
+
+    *   `Admin Credentials for Verification` (from ADMIN to "Verify User credential (JWT)")
+    *   `Admin Authentication Success / Failure` (from "Verify User credential (JWT)" to Backend API Server)
+    *   `Validating authorization` (from Backend API Server to "Verify admin role/permission")
+    *   `If granted, have access to` (from "Verify admin role/permission" to DASHBOARD UI)
+    *   `Request order summary` (from DASHBOARD UI to "Display Order Details")
+    *   `(Detailed Order Data)` (from "Display Order Details" to DASHBOARD UI)
+    *   `GET Request Menu Item List` (from DASHBOARD UI to "Display Menu Items")
+    *   `(Menu Item Data)` (from "Display Menu Items" to DASHBOARD UI)
+    *   `Initiate Order Management Action` (from DASHBOARD UI to "Update order status")
+    *   `Retrieve current order status` (from "Update order status" to "Fetch order status")
+    *   `POST Request /menu-items` (from DASHBOARD UI to "Create Menu Item")
+    *   `PATCH/PUT Request /menu-items/{id}` (from DASHBOARD UI to "Update Existing Menu Item")
+    *   `DELETE Request /menu-items/{id}` (from DASHBOARD UI to "Delete Menu Item")
+    *   Data flows between "Create Menu Item", "Update Existing Menu Item", "Delete Menu Item", "Display Menu Items", "Fetch order status" and `MongoDB` (implicitly representing data storage and retrieval operations, though specific labels are less detailed in this Admin DFD for conciseness).
+
+
 ![Dataflow Diagram](./docs/diagrams/dataflow_diagram.png)
+![Admin Dataflow Diagram](./docs/diagrams/admin_dataflow_diagram.png)
 
 ---
 
