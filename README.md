@@ -613,7 +613,7 @@ Our user stories are meticulously crafted to be persona-driven, ensuring that th
 
 ## 🖼️ Wireframes: Demonstrating Iteration
 
-**To showcase our iterative design process, this README provides examples of both *Original* and *Revised* wireframes for Home and Menu screens across desktop, mobile, and tablet.  The *complete sets* of Original wireframes are located in `docs/wireframes/old`, and the *Revised* wireframes are in `docs/wireframes/new`.  Reviewing both folders provides a full understanding of our design evolution.**
+To showcase our iterative design process, this README provides examples of both *Original* and *Revised* wireframes for Home and Menu screens across desktop, mobile, and tablet.  The *complete sets* of Original wireframes are located in `docs/wireframes/old`, and the *Revised* wireframes are in `docs/wireframes/new`.  Reviewing both folders provides a full understanding of our design evolution.
 
 These wireframes are medium-fidelity and explicitly demonstrate our iterative design approach and exceptional planning, addressing: **project flow, structure, space distribution, content prioritisation, action clarity, navigation, and responsiveness across devices**, crucial for High Distinction.
 
